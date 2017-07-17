@@ -6,6 +6,10 @@
 # sudo make
 # ./main
 ```
+- if you want cmake to Xcode project
+```
+cmake -GXcode
+```
 ## Not completed
 1. use pi camera store image
 2. Identfiy features
