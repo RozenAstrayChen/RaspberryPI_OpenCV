@@ -1,33 +1,59 @@
-#include "opencv2/core/core.hpp"
-#include "opencv2/highgui/highgui.hpp"
-#include "opencv2/imgproc/imgproc.hpp"
+#include <iostream>
+#include <opencv2/opencv.hpp>
 #include "image_add.hpp"
+
+
+#ifdef __unix
+    #include <raspicam/raspicam_cv.h>
+    #include "image_track_pi.hpp"
+#elif __APPLE__
+    #include "image_track.hpp"
+#endif
 
 using namespace cv;
 using namespace std;
-String path = "/home/pi/openCV/";
+String path_mac = "/Users/Rozen_mac/code/opencv/photo/";
+String path_pi = "/home/pi/openCV/";
+
+
 
 int main(int argc, char *argv[])
 {
-    image_add image_obj;
-    cv::Mat logo,imageROI,background;
+    #ifdef __WINDOWS__
+        printf("Windows");
+    #ifdef __WIN64
+        printf("64\n");
+    #elif
+        printf("32\n");
+    #endif
     
-    logo = cv::imread(path+"DC_Comics_logo.png");
-    background = cv::imread(path+"avin.jpg");
-    imageROI = image_obj.image_ROI(background, logo, 30,550, logo.cols, logo.rows);
-
+    #elif __APPLE__
+        image_track track_obj;
+        VideoCapture video(0);
+        track_obj.track_start(video);
+        video.release();
+    #elif _unix
+        printf("UNIX\n");
     
-    cv::addWeighted(imageROI, 1, logo, 1, 0, imageROI);
+    #elif _linux
+        printf("Linux");
+    #else
+        image_track_pi track_obj;
+        RaspiCam_Cv video;
+        if(!video.open())
+        {
+            cerr << "ERROR opening the camera" <<endl;
+            return -1;
+        }
+        track_obj.track_start(video);
+        video.release();
+    #endif
+    //image_add image_obj;
     
-
-    //Pixel tour
-    image_obj.image_visit(background, 100);
-    //show
-    image_obj.image_show(background);
     
     
-    
-    
+    cv::destroyAllWindows();
     
     return 0;
 }
+

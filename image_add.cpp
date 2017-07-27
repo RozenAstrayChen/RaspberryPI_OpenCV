@@ -9,6 +9,7 @@
 #include "image_add.hpp"
 
 
+
 Mat image_add::image_ROI(Mat background,Mat logo,int x,int y,int clos,int rows){
     Mat imageROI;
     imageROI = background(cv::Rect(x,y,clos,rows));
@@ -16,11 +17,14 @@ Mat image_add::image_ROI(Mat background,Mat logo,int x,int y,int clos,int rows){
     
     return imageROI;
 }
+
 void image_add::image_show(Mat image){
-        cv::namedWindow("image");
-        cv::imshow("image", image);
-        waitKey(0);
-        return ;
+    cv::namedWindow("image");
+    cv::imshow("image", image);
+   
+    waitKey(0);
+    
+    return ;
 }
 void image_add::image_visit(Mat image,int value){
     int widthLimit = image.channels()*image.cols;
