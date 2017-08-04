@@ -8,10 +8,14 @@
 ```
 - if you want cmake to Xcode project
 ```
-cmake -GXcode
+cmake -GXcode ..
 ```
 ## Not completed
-1. use pi camera store image
+1. --use pi camera store image--
 2. Identfiy features
 
  
+## Update 2017/8/4
+1. change image track method
+2. add trackFiliterObject
+3. we like tennis~

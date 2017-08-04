@@ -8,6 +8,7 @@
     #include "image_track_pi.hpp"
 #elif __APPLE__
     #include "image_track.hpp"
+    #include "trackFilteredObject.hpp"
 #endif
 
 using namespace cv;
@@ -19,6 +20,7 @@ String path_pi = "/home/pi/openCV/";
 
 int main(int argc, char *argv[])
 {
+    
     #ifdef __WINDOWS__
         printf("Windows");
     #ifdef __WIN64
@@ -28,9 +30,13 @@ int main(int argc, char *argv[])
     #endif
     
     #elif __APPLE__
-        image_track track_obj;
+        //image_track track_obj;
+        trackFiliteredObject track;
         VideoCapture video(0);
-        track_obj.track_start(video);
+        track.createTrackbars();
+        track.test_hsv(video);
+        //track_obj.track_start(video);
+    
         video.release();
     #elif _unix
         printf("UNIX\n");

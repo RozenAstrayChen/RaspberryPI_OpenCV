@@ -9,9 +9,13 @@
 #ifndef image_track_hpp
 #define image_track_hpp
 #include <iostream>
+#include <string>
 #include <stdio.h>
 #include <iostream>
 #include <opencv2/opencv.hpp>
+
+using namespace std;
+using namespace cv;
 
 static int hsize = 16;                   // 计算直方图所必备的内容
 static float hranges[] = {0,180};        // 计算直方图所必备的内容
@@ -26,11 +30,13 @@ public:
     image_track();
     void track_start(cv::VideoCapture video);
     
+        
 private:
     
     
     cv::Mat frame,hsv,hue,mask,hist,backproj;//in order to load video frame
     cv::Rect trackWindow;             // 追踪到的窗口
+    
     
 };
 

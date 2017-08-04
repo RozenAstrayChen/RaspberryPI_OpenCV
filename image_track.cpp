@@ -6,6 +6,7 @@
 //
 //
 
+
 #include "image_track.hpp"
 using namespace std;
 using namespace cv;
@@ -25,7 +26,7 @@ void  static onMouse(int event,int x,int y,int,void*){
         //That the two regions take the intersection, the main purpose is to deal with when the mouse in the selected area to remove the screen
         /*Rect argument (x,y,width,height)*/
         selection &= cv::Rect(0, 0, image.cols, image.rows);
-        cout << "image.cols = " << image.cols << "\timage.rows" <<  image.rows<<endl;
+        //cout << "image.cols = " << image.cols << "\timage.rows" <<  image.rows << endl;
         cout << "after selection = " << selection << endl;
     }
     switch(event) {
@@ -51,11 +52,14 @@ image_track::image_track(){
    // std::cout << phranges << std::endl;
 }
 
+/*using mouse select track object*/
 void image_track::track_start(cv::VideoCapture video){
     try{
-    video.set(CV_CAP_PROP_POS_FRAMES,300);
+    //video.set(CV_CAP_PROP_POS_FRAMES,300);
     cv::namedWindow("CamShift at Rozen");
-    cv::namedWindow("testing on HSV");
+    //cv::namedWindow("testing on HSV");
+    cv::namedWindow("Hue");
+    cv::namedWindow("backproj");
     /*register mouse event callback function,third param is user provid callback)*/
     cv::setMouseCallback("CamShift at Rozen",onMouse ,0);
     while(true) {
@@ -70,15 +74,18 @@ void image_track::track_start(cv::VideoCapture video){
         cv::cvtColor(image, hsv, cv::COLOR_BGR2HSV);
         if( trackObject ) {
             
-            cv::inRange(hsv, cv::Scalar(0, 30, 30), cv::Scalar(180, 256, 256), mask);
+            cv::inRange(hsv,Scalar(0,0,0),Scalar(256,256,256), mask);
             
             imshow("testing on HSV", mask);
+            //separate the hue channel
             int ch[] = {0, 0};
             hue.create(hsv.size(), hsv.depth());
             cv::mixChannels(&hsv, 1, &hue, 1, ch, 1);
+            imshow("Hue", hue);
             
             if( trackObject < 0 ) {
                 cv::Mat roi(hue, selection), maskroi(mask, selection);
+                //calculates the histogram of the area where the ROI located
                 calcHist(&roi, 1, 0, maskroi, hist, 1, &hsize, &phranges);
                 normalize(hist, hist, 0, 255, CV_MINMAX);
                 
@@ -88,7 +95,9 @@ void image_track::track_start(cv::VideoCapture video){
             }
             
             calcBackProject(&hue, 1, 0, hist, backproj, &phranges);
+            
             backproj &= mask;
+            imshow("backproj",backproj);
             cv::RotatedRect trackBox = CamShift(backproj, trackWindow, cv::TermCriteria( CV_TERMCRIT_EPS | CV_TERMCRIT_ITER, 10, 1 ));
             if( trackWindow.area() <= 1 ) {
                 int cols = backproj.cols, rows = backproj.rows, r = (MIN(cols, rows) + 5)/6;
@@ -102,6 +111,7 @@ void image_track::track_start(cv::VideoCapture video){
         if( selectObject && selection.width > 0 && selection.height > 0 ) {
             cv::Mat roi(image, selection);
             bitwise_not(roi, roi);
+            
         }
         
         imshow( "CamShift at Rozen", image );

@@ -25,6 +25,7 @@ ADD_EXECUTABLE (main main.cpp)
 TARGET_LINK_LIBRARIES( main ${OpenCV_LIBS} )
 TARGET_LINK_LIBRARIES (main image_add)
 TARGET_LINK_LIBRARIES (main image_track)
+TARGET_LINK_LIBRARIES (main trackFilteredObject)
 
 #raspberry
 IF(OpenCV_FOUND AND raspicam_CV_FOUND)
@@ -39,6 +40,7 @@ ENDIF()
 #add other file to link
 ADD_LIBRARY (image_add image_add.cpp)
 ADD_LIBRARY (image_track image_track.cpp)
+ADD_LIBRARY (trackFilteredObject trackFilteredObject.cpp)
 
 #raspberry
 IF(OpenCV_FOUND AND raspicam_CV_FOUND)

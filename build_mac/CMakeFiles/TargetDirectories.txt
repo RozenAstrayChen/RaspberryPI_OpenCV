@@ -1,3 +1,4 @@
+/Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/trackFilteredObject.dir
 /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/image_track.dir
 /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/image_add.dir
 /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/main.dir

@@ -29,4 +29,5 @@ dependencies: /Users/Rozen_mac/code/opencv/project/cmake_test/main.cpp \
   /usr/local/include/opencv2/contrib/retina.hpp \
   /usr/local/include/opencv2/contrib/openfabmap.hpp \
   /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.hpp \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.hpp
+  /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.hpp \
+  /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.hpp
