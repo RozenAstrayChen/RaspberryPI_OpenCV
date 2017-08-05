@@ -157,6 +157,57 @@ void trackFiliteredObject::createTrackbars(){
     createTrackbar( "V_MIN", trackbarWindowName, &V_MIN, V_MAX, on_trackbar );
     createTrackbar( "V_MAX", trackbarWindowName, &V_MAX, V_MAX, on_trackbar );
 }
+/*Morphological operations*/
+void trackFiliteredObject::morphOps(cv::Mat &thresh){
+    //create structuring element that will be used to "dilate" and "erod" image.
+    //the element chosen here is a 3px by 3px rectangle
+    Mat erodeElement = getStructuringElement(MORPH_RECT, Size(3,3));
+    //dilate with larger element so make sure object is nicely visable
+    Mat dilateElement = getStructuringElement(MORPH_RECT, Size(8,8));
+    
+    erode(thresh, thresh, erodeElement);
+    erode(thresh,thresh,erodeElement);
+    
+    
+    dilate(thresh,thresh,dilateElement);
+    dilate(thresh,thresh,dilateElement);
+}
+#ifdef __unix
+/*in order to read H,S,V value*/
+void trackFiliteredObject::test_hsv(raspicam::RaspiCam_Cv video){
+    cv::namedWindow("image");
+    cv::namedWindow("testing on HSV");
+    cv::namedWindow("camerafeed");
+    
+    while(true){
+        video.grab();
+        video.retrieve(frame);
+        if(frame.empty())return;
+        
+        frame.copyTo(image_frame);
+        cv::cvtColor(image_frame, hsv, cv::COLOR_BGR2HSV);
+        
+        Multiple_inRanage(hsv, threshold, night);
+        //cv::inRange(hsv,Scalar(H_MIN,S_MIN,V_MIN),Scalar(H_MAX,S_MAX,V_MAX), threshold);
+        //cv::inRange(hsv, Scalar(17,150,36), Scalar(256,256,170), threshold);
+        //cv::inRange(hsv, Scalar(94,93,34), Scalar(103,256,168), threshold);
+        
+        if(useMorphOps)morphOps(threshold);
+        
+        if(track)trackObjcet(x, y, threshold, image_frame);
+        
+        //imshow("image", image_frame);
+        imshow("testing on HSV", threshold);
+        imshow("camerafeed", image_frame);
+        
+        char c = (char)cv::waitKey(1000/15.0);
+        if( c == 27 )
+            break;
+    }
+}
+
+
+#elif __APPLE__
 /*in order to read H,S,V value*/
 void trackFiliteredObject::test_hsv(cv::VideoCapture video){
     cv::namedWindow("image");
@@ -175,7 +226,7 @@ void trackFiliteredObject::test_hsv(cv::VideoCapture video){
         //cv::inRange(hsv,Scalar(H_MIN,S_MIN,V_MIN),Scalar(H_MAX,S_MAX,V_MAX), threshold);
         //cv::inRange(hsv, Scalar(17,150,36), Scalar(256,256,170), threshold);
         //cv::inRange(hsv, Scalar(94,93,34), Scalar(103,256,168), threshold);
-
+        
         if(useMorphOps)morphOps(threshold);
         
         if(track)trackObjcet(x, y, threshold, image_frame);
@@ -189,18 +240,7 @@ void trackFiliteredObject::test_hsv(cv::VideoCapture video){
             break;
     }
 }
-/*Morphological operations*/
-void trackFiliteredObject::morphOps(cv::Mat &thresh){
-    //create structuring element that will be used to "dilate" and "erod" image.
-    //the element chosen here is a 3px by 3px rectangle
-    Mat erodeElement = getStructuringElement(MORPH_RECT, Size(3,3));
-    //dilate with larger element so make sure object is nicely visable
-    Mat dilateElement = getStructuringElement(MORPH_RECT, Size(8,8));
-    
-    erode(thresh, thresh, erodeElement);
-    erode(thresh,thresh,erodeElement);
-    
-    
-    dilate(thresh,thresh,dilateElement);
-    dilate(thresh,thresh,dilateElement);
-}
+#else
+
+
+#endif

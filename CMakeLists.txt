@@ -26,7 +26,7 @@ TARGET_LINK_LIBRARIES( main ${OpenCV_LIBS} )
 TARGET_LINK_LIBRARIES (main image_add)
 TARGET_LINK_LIBRARIES (main image_track)
 TARGET_LINK_LIBRARIES (main trackFilteredObject)
-
+TARGET_LINK_LIBRARIES (main Serial)
 #raspberry
 IF(OpenCV_FOUND AND raspicam_CV_FOUND)
     MESSAGE(STATUS "raspberry use raspicam to control camera")
@@ -41,11 +41,13 @@ ENDIF()
 ADD_LIBRARY (image_add image_add.cpp)
 ADD_LIBRARY (image_track image_track.cpp)
 ADD_LIBRARY (trackFilteredObject trackFilteredObject.cpp)
+ADD_LIBRARY (Serial Serial.cpp)
 
 #raspberry
 IF(OpenCV_FOUND AND raspicam_CV_FOUND)
     MESSAGE(STATUS "raspberry use raspicam to control camera")
     ADD_LIBRARY (image_track_pi image_track_pi.cpp)
+    
 
 ELSE()
     MESSAGE(STATUS "not include raspicam")

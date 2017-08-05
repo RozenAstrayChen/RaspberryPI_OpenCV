@@ -19,3 +19,6 @@ cmake -GXcode ..
 1. change image track method
 2. add trackFiliterObject
 3. we like tennis~
+## Update 2017/8/5
+1. add uart for transmission
+2. new raspberry pi  method in TrackFiliterObject

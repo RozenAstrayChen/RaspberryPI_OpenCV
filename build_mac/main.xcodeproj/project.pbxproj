@@ -9,25 +9,26 @@
 /* Begin PBXAggregateTarget section */
 		9CE81928471841C282DC0431 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 19AA130CEB914EAF842C3A8B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = E6319634F0E44410B1C10C8F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				1EF239DA0300433CB921E6F7 /* CMake Rules */,
+				130F7B4C604742099B469578 /* CMake Rules */,
 			);
 			dependencies = (
-				BC3C0140E1A54C678C97EFDA /* PBXTargetDependency */,
-				D8FD5D56FB0A4B4A990A194A /* PBXTargetDependency */,
-				A0A0C10392DE44D7B40AA85D /* PBXTargetDependency */,
-				8E3F58DEE51545E2B67B2A12 /* PBXTargetDependency */,
-				31E2228964154EA792D1DA05 /* PBXTargetDependency */,
+				579DA46DAEB042ECB6039CB6 /* PBXTargetDependency */,
+				FC51970656024CAEAF240DD6 /* PBXTargetDependency */,
+				9B9A5BEA3B9D4A3FAABECF23 /* PBXTargetDependency */,
+				4BBCED19E92B453191BF108C /* PBXTargetDependency */,
+				420E9C476C9247B596F8D784 /* PBXTargetDependency */,
+				9F486BCD41FC47DC8749288B /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		D5B2325B407040408443A7B9 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = BCA06134663149C59194EDC5 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 6469C24339C74D72B65F1650 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				BA5B30164A0E43399906FA47 /* CMake Rules */,
+				1BBF4EB35DCE4724869709E3 /* CMake Rules */,
 			);
 			dependencies = (
 			);
@@ -37,39 +38,41 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		28867EED2E9C432B8454D96F /* /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.cpp */ = {isa = PBXBuildFile; fileRef = 4B3697753B2E42F89F175E87 /* /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.cpp */; };
-		5093E913E69D4144BDA01025 /* /Users/Rozen_mac/code/opencv/project/cmake_test/main.cpp */ = {isa = PBXBuildFile; fileRef = 7A5EC47E06FB4348B5BD8090 /* /Users/Rozen_mac/code/opencv/project/cmake_test/main.cpp */; };
-		557A080D944E48B99BA554E6 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4952D45723D34370ADEF7120 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */; };
-		64958AD096B94E97BB92B6C5 /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.cpp */ = {isa = PBXBuildFile; fileRef = 9B5AEFFABD1544FC87C813A1 /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.cpp */; };
-		813EECAF633C4AAEAC7EDD52 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8CBBD7F0587142EDB24E56CA /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */; };
-		BB31C9F6C0F44CCDB6B49B7E /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 55BF3807EDD14D9A8288718C /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */; };
-		BB59EF26CA9C4075A1317FC3 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9C85BB62DC3D478AB0089E38 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */; };
-		BB6F6C980E2D465E81237040 /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.cpp */ = {isa = PBXBuildFile; fileRef = D3587E7B24DB41A8BED7972F /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.cpp */; };
+		1214489D463740138FDAEA6E /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2E3D8C1E287D4AC497B990E7 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */; };
+		12BC6B67116E4E60B0C1812F /* /Users/Rozen_mac/code/opencv/project/cmake_test/Serial.cpp */ = {isa = PBXBuildFile; fileRef = ABB0069CB3B84F769B8B648F /* /Users/Rozen_mac/code/opencv/project/cmake_test/Serial.cpp */; };
+		2DCAC37FE9D9460D94820037 /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.cpp */ = {isa = PBXBuildFile; fileRef = CA9AF87F8CFB40CE86F09B85 /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.cpp */; };
+		49024D7F1A184E7C92A9FFC8 /* /Users/Rozen_mac/code/opencv/project/cmake_test/main.cpp */ = {isa = PBXBuildFile; fileRef = 936FD2510AEB468AAEA0414B /* /Users/Rozen_mac/code/opencv/project/cmake_test/main.cpp */; };
+		5B54821B885143EA9605F76F /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.cpp */ = {isa = PBXBuildFile; fileRef = 9671607F3CEE42459D80AF2D /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.cpp */; };
+		775E6C12924A440E9F86F3D5 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2F7DBD74B0904C6A82388CCF /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */; };
+		851F7061A50C4B278291A686 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0070853551AE4EE892774B13 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */; };
+		9FF8DFED99034CCAA4A10689 /* /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.cpp */ = {isa = PBXBuildFile; fileRef = EF2BC3B40193475D9AFC9D78 /* /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.cpp */; };
+		C2F3673E7C004445AEF89B18 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8B84046969AE43B6BFF7052C /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */; };
+		FA342231FFC847BD96DEBFD6 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8A463D5C6D784ED590CBF741 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		09938D54E5104FA29EE86365 /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		92E7E6395EDE4F6D95B6C4AD /* Debug */ = {
+		30A14309FE10415E99DF59CD /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Debug;
 		};
-		DEF5A25F98094AF9BFA84216 /* Release */ = {
+		418B78C92908443B8D941E75 /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Release;
 		};
-		E58478F3AC774335B34411F5 /* RelWithDebInfo */ = {
+		724A55063D274DC5BF1C93E8 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		8A4E5903ACB14A74A5F4C28D /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -79,302 +82,362 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		11FB2E2C819C481F8127D60F /* PBXContainerItemProxy */ = {
+		1C2B4084B6EB4096968C73F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46A2153FA7AE4F58AC53EEE1;
+			remoteInfo = image_add;
+		};
+		243D8AFB3DBD446FA4E9D0BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D5B2325B407040408443A7B9;
 			remoteInfo = ZERO_CHECK;
 		};
-		25E6C1D568C34C38BD1007CB /* PBXContainerItemProxy */ = {
+		3D5016EBDA864843828C5AD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D5B2325B407040408443A7B9;
 			remoteInfo = ZERO_CHECK;
 		};
-		446686AFC8ED41F9B439AA22 /* PBXContainerItemProxy */ = {
+		4795123197E843348BEEBF75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46A2153FA7AE4F58AC53EEE1;
+			remoteInfo = image_add;
+		};
+		4EBDB68365764A99A1842938 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D5B2325B407040408443A7B9;
 			remoteInfo = ZERO_CHECK;
 		};
-		4E82BDFB45AC48C5B63165DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 957953CD783849599F446015;
-			remoteInfo = trackFilteredObject;
-		};
-		5185A90F19D645658CF8CC98 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D5B2325B407040408443A7B9;
-			remoteInfo = ZERO_CHECK;
-		};
-		69628DFC17FC495FA60AC857 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D5B2325B407040408443A7B9;
-			remoteInfo = ZERO_CHECK;
-		};
-		82AE8257A598418AB3E778CD /* PBXContainerItemProxy */ = {
+		6B1F2FD0F32547EAA547B14C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 208B50D61AB74DDDB07219B7;
 			remoteInfo = main;
 		};
-		AB2B4ACEB31546D9BC86A9A0 /* PBXContainerItemProxy */ = {
+		7C7F109C33D74A58991C237A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ABA6EA4A48CA47FD836097ED;
-			remoteInfo = image_track;
+			remoteGlobalIDString = D5B2325B407040408443A7B9;
+			remoteInfo = ZERO_CHECK;
 		};
-		CFB022AC8A59481E9CBD061C /* PBXContainerItemProxy */ = {
+		9AFA849C1C7F4ADFA1BD5754 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 46A2153FA7AE4F58AC53EEE1;
-			remoteInfo = image_add;
+			remoteGlobalIDString = 0700D1EB21834682B380AC05;
+			remoteInfo = Serial;
 		};
-		CFB9AB56058B4C608E89265B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ABA6EA4A48CA47FD836097ED;
-			remoteInfo = image_track;
-		};
-		DDD7DD6D346442B48D6FF626 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 46A2153FA7AE4F58AC53EEE1;
-			remoteInfo = image_add;
-		};
-		FF422F61FEE34E59AFC7EC79 /* PBXContainerItemProxy */ = {
+		B5493796D9F347A78034F038 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 957953CD783849599F446015;
 			remoteInfo = trackFilteredObject;
 		};
+		B7B9CBCCB2DC455AAC82E7AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABA6EA4A48CA47FD836097ED;
+			remoteInfo = image_track;
+		};
+		BA213A097B684FA3962BCC5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABA6EA4A48CA47FD836097ED;
+			remoteInfo = image_track;
+		};
+		D89CA3C4235F4D2085BE43DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5B2325B407040408443A7B9;
+			remoteInfo = ZERO_CHECK;
+		};
+		EC2CDFAD561E4444A571D84A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 957953CD783849599F446015;
+			remoteInfo = trackFilteredObject;
+		};
+		F969EBCD31A348458E4063B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5B2325B407040408443A7B9;
+			remoteInfo = ZERO_CHECK;
+		};
+		FCBDF739EF33435486CB8F10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 903680E374594A1E8F566AC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0700D1EB21834682B380AC05;
+			remoteInfo = Serial;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		208AE5B8AB2E42A7B3B8B3F7 /* main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = main; sourceTree = BUILT_PRODUCTS_DIR; };
-		37B7B580F6F742889E6FDC4F /* image_track */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libimage_track.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4952D45723D34370ADEF7120 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		4A0F1711F9F44876A7BF913E /* image_add */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libimage_add.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B3697753B2E42F89F175E87 /* /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = trackFilteredObject.cpp; path = trackFilteredObject.cpp; sourceTree = SOURCE_ROOT; };
-		55BF3807EDD14D9A8288718C /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		6014FAAA8D1A44E89859868E /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		7A5EC47E06FB4348B5BD8090 /* /Users/Rozen_mac/code/opencv/project/cmake_test/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
-		8CBBD7F0587142EDB24E56CA /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		98C9B4F6B5614B4D9AA509C3 /* trackFilteredObject */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtrackFilteredObject.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B5AEFFABD1544FC87C813A1 /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = image_track.cpp; path = image_track.cpp; sourceTree = SOURCE_ROOT; };
-		9C85BB62DC3D478AB0089E38 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		BCD4A81CFEB3412CA28EC544 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		D3587E7B24DB41A8BED7972F /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = image_add.cpp; path = image_add.cpp; sourceTree = SOURCE_ROOT; };
+		0070853551AE4EE892774B13 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1F944A7C0B464214A38EC852 /* image_track */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libimage_track.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		21AE733711DC4FCD84F7DDAE /* Serial */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSerial.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3D8C1E287D4AC497B990E7 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2F7DBD74B0904C6A82388CCF /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6FF5467F8C514F82B6B58750 /* main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = main; sourceTree = BUILT_PRODUCTS_DIR; };
+		832FA3B76B594962B572D625 /* image_add */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libimage_add.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A463D5C6D784ED590CBF741 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8B84046969AE43B6BFF7052C /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		936FD2510AEB468AAEA0414B /* /Users/Rozen_mac/code/opencv/project/cmake_test/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		9671607F3CEE42459D80AF2D /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = image_add.cpp; path = image_add.cpp; sourceTree = SOURCE_ROOT; };
+		A8B1AA80166044F399032659 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		ABB0069CB3B84F769B8B648F /* /Users/Rozen_mac/code/opencv/project/cmake_test/Serial.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Serial.cpp; path = Serial.cpp; sourceTree = SOURCE_ROOT; };
+		CA9AF87F8CFB40CE86F09B85 /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = image_track.cpp; path = image_track.cpp; sourceTree = SOURCE_ROOT; };
+		D75C744A8E1446B197A551C1 /* trackFilteredObject */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtrackFilteredObject.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2BC3B40193475D9AFC9D78 /* /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = trackFilteredObject.cpp; path = trackFilteredObject.cpp; sourceTree = SOURCE_ROOT; };
+		F7C8BA4DB91240979A63BA59 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		09C2000BB7CD478EB37838C3 /* image_add */ = {
+		0C13CDC7EB414C29A45D4664 /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				69992D0F15BB431CBB185ADD /* Source Files */,
-				4952D45723D34370ADEF7120 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
+				8BB687176C8846D3B4E40CF7 /* CMake Rules */,
+				F7C8BA4DB91240979A63BA59 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
 			);
-			name = image_add;
+			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		0BE9685273A14836BCFBD654 /* Source Files */ = {
+		3C1BC9D32DD5427EA8773C3B /* Serial */ = {
 			isa = PBXGroup;
 			children = (
-				7A5EC47E06FB4348B5BD8090 /* /Users/Rozen_mac/code/opencv/project/cmake_test/main.cpp */,
+				B4A09FDC4D584930AF756DE4 /* Source Files */,
+				2F7DBD74B0904C6A82388CCF /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
+			);
+			name = Serial;
+			sourceTree = "<group>";
+		};
+		70FE99DF87D84B30875F9A8F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		8BB687176C8846D3B4E40CF7 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		97E7B9187BF347AEA094F70E = {
+			isa = PBXGroup;
+			children = (
+				3C1BC9D32DD5427EA8773C3B /* Serial */,
+				B73279C6F8B1490E9AF8B550 /* trackFilteredObject */,
+				CAE341E47FBA4DC1AF5B3BD6 /* image_track */,
+				E4FB8EDBDBE740E1902C2E2F /* image_add */,
+				D8C43D0662E94F5EB8CF0BFA /* main */,
+				0C13CDC7EB414C29A45D4664 /* ALL_BUILD */,
+				FF206F291B4A456B969A370F /* ZERO_CHECK */,
+				BCD404242CDF43EDA5C752DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A621299A2E32439B80F0B44A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9671607F3CEE42459D80AF2D /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		10FC1E36B47C482BB366173B /* ZERO_CHECK */ = {
+		B0AF3342A8EF4A33A6DA9551 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				D0F1144A4C1D4BC9B46280A1 /* CMake Rules */,
-				BCD4A81CFEB3412CA28EC544 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
-			);
-			name = ZERO_CHECK;
-			sourceTree = "<group>";
-		};
-		18B5ECBBA53B49E5BF0A99D7 = {
-			isa = PBXGroup;
-			children = (
-				3D74C049B1CB4C94A4193CCB /* trackFilteredObject */,
-				C74B0E5BD964483EA4F47C8C /* image_track */,
-				09C2000BB7CD478EB37838C3 /* image_add */,
-				3317932B1B5B4408969DA3CF /* main */,
-				EE1153517BEB44B7982CAFD3 /* ALL_BUILD */,
-				10FC1E36B47C482BB366173B /* ZERO_CHECK */,
-				86C877DAFEF646FA839193F6 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		29BD3C62E7A74703B3946822 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				9B5AEFFABD1544FC87C813A1 /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.cpp */,
+				936FD2510AEB468AAEA0414B /* /Users/Rozen_mac/code/opencv/project/cmake_test/main.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		329C5687654B4D0B8CCB2D9C /* Source Files */ = {
+		B439F7F420884584BA506438 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				4B3697753B2E42F89F175E87 /* /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.cpp */,
+				EF2BC3B40193475D9AFC9D78 /* /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		3317932B1B5B4408969DA3CF /* main */ = {
+		B4A09FDC4D584930AF756DE4 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				0BE9685273A14836BCFBD654 /* Source Files */,
-				9C85BB62DC3D478AB0089E38 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
+				ABB0069CB3B84F769B8B648F /* /Users/Rozen_mac/code/opencv/project/cmake_test/Serial.cpp */,
 			);
-			name = main;
+			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		3D74C049B1CB4C94A4193CCB /* trackFilteredObject */ = {
+		B73279C6F8B1490E9AF8B550 /* trackFilteredObject */ = {
 			isa = PBXGroup;
 			children = (
-				329C5687654B4D0B8CCB2D9C /* Source Files */,
-				8CBBD7F0587142EDB24E56CA /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
+				B439F7F420884584BA506438 /* Source Files */,
+				0070853551AE4EE892774B13 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
 			);
 			name = trackFilteredObject;
 			sourceTree = "<group>";
 		};
-		42DF5720EE5C412680DF50FE /* CMake Rules */ = {
+		BCD404242CDF43EDA5C752DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		69992D0F15BB431CBB185ADD /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				D3587E7B24DB41A8BED7972F /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		86C877DAFEF646FA839193F6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4A0F1711F9F44876A7BF913E /* image_add */,
-				37B7B580F6F742889E6FDC4F /* image_track */,
-				208AE5B8AB2E42A7B3B8B3F7 /* main */,
-				98C9B4F6B5614B4D9AA509C3 /* trackFilteredObject */,
+				21AE733711DC4FCD84F7DDAE /* Serial */,
+				832FA3B76B594962B572D625 /* image_add */,
+				1F944A7C0B464214A38EC852 /* image_track */,
+				6FF5467F8C514F82B6B58750 /* main */,
+				D75C744A8E1446B197A551C1 /* trackFilteredObject */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C74B0E5BD964483EA4F47C8C /* image_track */ = {
+		CAE341E47FBA4DC1AF5B3BD6 /* image_track */ = {
 			isa = PBXGroup;
 			children = (
-				29BD3C62E7A74703B3946822 /* Source Files */,
-				55BF3807EDD14D9A8288718C /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
+				DF4ADD039E5348E48286EF25 /* Source Files */,
+				2E3D8C1E287D4AC497B990E7 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
 			);
 			name = image_track;
 			sourceTree = "<group>";
 		};
-		D0F1144A4C1D4BC9B46280A1 /* CMake Rules */ = {
+		D8C43D0662E94F5EB8CF0BFA /* main */ = {
 			isa = PBXGroup;
 			children = (
+				B0AF3342A8EF4A33A6DA9551 /* Source Files */,
+				8B84046969AE43B6BFF7052C /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
 			);
-			name = "CMake Rules";
+			name = main;
 			sourceTree = "<group>";
 		};
-		EE1153517BEB44B7982CAFD3 /* ALL_BUILD */ = {
+		DF4ADD039E5348E48286EF25 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				42DF5720EE5C412680DF50FE /* CMake Rules */,
-				6014FAAA8D1A44E89859868E /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
+				CA9AF87F8CFB40CE86F09B85 /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.cpp */,
 			);
-			name = ALL_BUILD;
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E4FB8EDBDBE740E1902C2E2F /* image_add */ = {
+			isa = PBXGroup;
+			children = (
+				A621299A2E32439B80F0B44A /* Source Files */,
+				8A463D5C6D784ED590CBF741 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
+			);
+			name = image_add;
+			sourceTree = "<group>";
+		};
+		FF206F291B4A456B969A370F /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				70FE99DF87D84B30875F9A8F /* CMake Rules */,
+				A8B1AA80166044F399032659 /* /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		208B50D61AB74DDDB07219B7 /* main */ = {
+		0700D1EB21834682B380AC05 /* Serial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2636F28208C42CF9A7BDA25 /* Build configuration list for PBXNativeTarget "main" */;
+			buildConfigurationList = EECA88CBA5714CC3B532A5E9 /* Build configuration list for PBXNativeTarget "Serial" */;
 			buildPhases = (
-				59028C830794455DA98EE66D /* Sources */,
+				33D3D0581062433B941C02DC /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A40A366BEAF74272BEDB93C1 /* PBXTargetDependency */,
-				06E61E9964E840BB9CF60AF4 /* PBXTargetDependency */,
-				2437CC0F4EF546E6909E3EAE /* PBXTargetDependency */,
-				CEE6955B7EC840E4A7E67A21 /* PBXTargetDependency */,
+				5D2832FE7B8B416FA1E7BA32 /* PBXTargetDependency */,
+			);
+			name = Serial;
+			productName = Serial;
+			productReference = 21AE733711DC4FCD84F7DDAE /* Serial */;
+			productType = "com.apple.product-type.library.static";
+		};
+		208B50D61AB74DDDB07219B7 /* main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64AB464B87646DABF1DB8F4 /* Build configuration list for PBXNativeTarget "main" */;
+			buildPhases = (
+				7B2B31386B1F43CC9CE43A6C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C22E62704DA4C758B8608FF /* PBXTargetDependency */,
+				0B39CC660170440F9D1A1319 /* PBXTargetDependency */,
+				0151FA41D1D442B2A457B417 /* PBXTargetDependency */,
+				9161DAB45DD04487A5F08EF3 /* PBXTargetDependency */,
+				F64A4232D0FD4DA9BC083330 /* PBXTargetDependency */,
 			);
 			name = main;
 			productName = main;
-			productReference = 208AE5B8AB2E42A7B3B8B3F7 /* main */;
+			productReference = 6FF5467F8C514F82B6B58750 /* main */;
 			productType = "com.apple.product-type.tool";
 		};
 		46A2153FA7AE4F58AC53EEE1 /* image_add */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6AE2C83CB424D17A60D7FB9 /* Build configuration list for PBXNativeTarget "image_add" */;
+			buildConfigurationList = 58D94573F37B426AAA322D22 /* Build configuration list for PBXNativeTarget "image_add" */;
 			buildPhases = (
-				EF8355EB3A4B4922A15822DE /* Sources */,
+				C5F530752E714843A4FC113E /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				59DC3B424FE24474B2D39BA9 /* PBXTargetDependency */,
+				A9F418D1260442CCA5B5B613 /* PBXTargetDependency */,
 			);
 			name = image_add;
 			productName = image_add;
-			productReference = 4A0F1711F9F44876A7BF913E /* image_add */;
+			productReference = 832FA3B76B594962B572D625 /* image_add */;
 			productType = "com.apple.product-type.library.static";
 		};
 		957953CD783849599F446015 /* trackFilteredObject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70D89E727554450688B8E772 /* Build configuration list for PBXNativeTarget "trackFilteredObject" */;
+			buildConfigurationList = 23FA60A8DEC843A4A08402C8 /* Build configuration list for PBXNativeTarget "trackFilteredObject" */;
 			buildPhases = (
-				76EBE6DD92294117925E6D4C /* Sources */,
+				24B4723B88D14818AFE783C7 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2462434C72DB4A2C94E28AB4 /* PBXTargetDependency */,
+				19EE354C6758497C84712003 /* PBXTargetDependency */,
 			);
 			name = trackFilteredObject;
 			productName = trackFilteredObject;
-			productReference = 98C9B4F6B5614B4D9AA509C3 /* trackFilteredObject */;
+			productReference = D75C744A8E1446B197A551C1 /* trackFilteredObject */;
 			productType = "com.apple.product-type.library.static";
 		};
 		ABA6EA4A48CA47FD836097ED /* image_track */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 157E172B64AC453CAD1F33D6 /* Build configuration list for PBXNativeTarget "image_track" */;
+			buildConfigurationList = 7ED78A87B3F741F4817608FA /* Build configuration list for PBXNativeTarget "image_track" */;
 			buildPhases = (
-				2A1453104346494995857993 /* Sources */,
+				178C6788628A4DDCA794EBDA /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				61A475CCADED4B53A9272BCF /* PBXTargetDependency */,
+				F0B764E4DE394AE481F720A1 /* PBXTargetDependency */,
 			);
 			name = image_track;
 			productName = image_track;
-			productReference = 37B7B580F6F742889E6FDC4F /* image_track */;
+			productReference = 1F944A7C0B464214A38EC852 /* image_track */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -386,22 +449,23 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 0830;
 			};
-			buildConfigurationList = AED3E9083E9645CFA8A119DA /* Build configuration list for PBXProject "main" */;
+			buildConfigurationList = 466E05067385405381BBD5DE /* Build configuration list for PBXProject "main" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				92E7E6395EDE4F6D95B6C4AD /* Debug */,
-				DEF5A25F98094AF9BFA84216 /* Release */,
-				09938D54E5104FA29EE86365 /* MinSizeRel */,
-				E58478F3AC774335B34411F5 /* RelWithDebInfo */,
+				30A14309FE10415E99DF59CD /* Debug */,
+				418B78C92908443B8D941E75 /* Release */,
+				724A55063D274DC5BF1C93E8 /* MinSizeRel */,
+				8A4E5903ACB14A74A5F4C28D /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 18B5ECBBA53B49E5BF0A99D7;
+			mainGroup = 97E7B9187BF347AEA094F70E;
 			projectDirPath = ../;
 			projectRoot = "";
 			targets = (
 				9CE81928471841C282DC0431 /* ALL_BUILD */,
+				0700D1EB21834682B380AC05 /* Serial */,
 				D5B2325B407040408443A7B9 /* ZERO_CHECK */,
 				46A2153FA7AE4F58AC53EEE1 /* image_add */,
 				ABA6EA4A48CA47FD836097ED /* image_track */,
@@ -412,7 +476,33 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13EE99A18E464D9A94669FB3 = {
+		130F7B4C604742099B469578 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			outputPaths = (
+/Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac -f /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		1BBF4EB35DCE4724869709E3 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			outputPaths = (
+/Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac -f /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		2E0E18F3C2EB4846AFD54C57 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -427,33 +517,7 @@
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		1EF239DA0300433CB921E6F7 /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			outputPaths = (
-/Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/ALL_BUILD			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac -f /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
-		BA5B30164A0E43399906FA47 /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			outputPaths = (
-/Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/ZERO_CHECK			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac -f /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
-		DD050C95FB0F4157A49ADD77 = {
+		7D2FEC82C1CE4DD4AC6B1791 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,382 +535,128 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2A1453104346494995857993 /* Sources */ = {
+		178C6788628A4DDCA794EBDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64958AD096B94E97BB92B6C5 /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.cpp */,
+				2DCAC37FE9D9460D94820037 /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59028C830794455DA98EE66D /* Sources */ = {
+		24B4723B88D14818AFE783C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5093E913E69D4144BDA01025 /* /Users/Rozen_mac/code/opencv/project/cmake_test/main.cpp */,
+				9FF8DFED99034CCAA4A10689 /* /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76EBE6DD92294117925E6D4C /* Sources */ = {
+		33D3D0581062433B941C02DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28867EED2E9C432B8454D96F /* /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.cpp */,
+				12BC6B67116E4E60B0C1812F /* /Users/Rozen_mac/code/opencv/project/cmake_test/Serial.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF8355EB3A4B4922A15822DE /* Sources */ = {
+		7B2B31386B1F43CC9CE43A6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB6F6C980E2D465E81237040 /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.cpp */,
+				49024D7F1A184E7C92A9FFC8 /* /Users/Rozen_mac/code/opencv/project/cmake_test/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F530752E714843A4FC113E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B54821B885143EA9605F76F /* /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		06E61E9964E840BB9CF60AF4 /* PBXTargetDependency */ = {
+		0151FA41D1D442B2A457B417 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 957953CD783849599F446015 /* trackFilteredObject */;
-			targetProxy = FF422F61FEE34E59AFC7EC79 /* PBXContainerItemProxy */;
+			targetProxy = B5493796D9F347A78034F038 /* PBXContainerItemProxy */;
 		};
-		2437CC0F4EF546E6909E3EAE /* PBXTargetDependency */ = {
+		0B39CC660170440F9D1A1319 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ABA6EA4A48CA47FD836097ED /* image_track */;
-			targetProxy = CFB9AB56058B4C608E89265B /* PBXContainerItemProxy */;
+			target = 0700D1EB21834682B380AC05 /* Serial */;
+			targetProxy = 9AFA849C1C7F4ADFA1BD5754 /* PBXContainerItemProxy */;
 		};
-		2462434C72DB4A2C94E28AB4 /* PBXTargetDependency */ = {
+		19EE354C6758497C84712003 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D5B2325B407040408443A7B9 /* ZERO_CHECK */;
-			targetProxy = 25E6C1D568C34C38BD1007CB /* PBXContainerItemProxy */;
+			targetProxy = 243D8AFB3DBD446FA4E9D0BB /* PBXContainerItemProxy */;
 		};
-		31E2228964154EA792D1DA05 /* PBXTargetDependency */ = {
+		420E9C476C9247B596F8D784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46A2153FA7AE4F58AC53EEE1 /* image_add */;
+			targetProxy = 1C2B4084B6EB4096968C73F5 /* PBXContainerItemProxy */;
+		};
+		4BBCED19E92B453191BF108C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABA6EA4A48CA47FD836097ED /* image_track */;
+			targetProxy = BA213A097B684FA3962BCC5E /* PBXContainerItemProxy */;
+		};
+		579DA46DAEB042ECB6039CB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5B2325B407040408443A7B9 /* ZERO_CHECK */;
+			targetProxy = 3D5016EBDA864843828C5AD7 /* PBXContainerItemProxy */;
+		};
+		5D2832FE7B8B416FA1E7BA32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5B2325B407040408443A7B9 /* ZERO_CHECK */;
+			targetProxy = 4EBDB68365764A99A1842938 /* PBXContainerItemProxy */;
+		};
+		8C22E62704DA4C758B8608FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5B2325B407040408443A7B9 /* ZERO_CHECK */;
+			targetProxy = F969EBCD31A348458E4063B6 /* PBXContainerItemProxy */;
+		};
+		9161DAB45DD04487A5F08EF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABA6EA4A48CA47FD836097ED /* image_track */;
+			targetProxy = B7B9CBCCB2DC455AAC82E7AA /* PBXContainerItemProxy */;
+		};
+		9B9A5BEA3B9D4A3FAABECF23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 957953CD783849599F446015 /* trackFilteredObject */;
+			targetProxy = EC2CDFAD561E4444A571D84A /* PBXContainerItemProxy */;
+		};
+		9F486BCD41FC47DC8749288B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 208B50D61AB74DDDB07219B7 /* main */;
-			targetProxy = 82AE8257A598418AB3E778CD /* PBXContainerItemProxy */;
+			targetProxy = 6B1F2FD0F32547EAA547B14C /* PBXContainerItemProxy */;
 		};
-		59DC3B424FE24474B2D39BA9 /* PBXTargetDependency */ = {
+		A9F418D1260442CCA5B5B613 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D5B2325B407040408443A7B9 /* ZERO_CHECK */;
-			targetProxy = 69628DFC17FC495FA60AC857 /* PBXContainerItemProxy */;
+			targetProxy = D89CA3C4235F4D2085BE43DE /* PBXContainerItemProxy */;
 		};
-		61A475CCADED4B53A9272BCF /* PBXTargetDependency */ = {
+		F0B764E4DE394AE481F720A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D5B2325B407040408443A7B9 /* ZERO_CHECK */;
-			targetProxy = 446686AFC8ED41F9B439AA22 /* PBXContainerItemProxy */;
+			targetProxy = 7C7F109C33D74A58991C237A /* PBXContainerItemProxy */;
 		};
-		8E3F58DEE51545E2B67B2A12 /* PBXTargetDependency */ = {
+		F64A4232D0FD4DA9BC083330 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 46A2153FA7AE4F58AC53EEE1 /* image_add */;
-			targetProxy = CFB022AC8A59481E9CBD061C /* PBXContainerItemProxy */;
+			targetProxy = 4795123197E843348BEEBF75 /* PBXContainerItemProxy */;
 		};
-		A0A0C10392DE44D7B40AA85D /* PBXTargetDependency */ = {
+		FC51970656024CAEAF240DD6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ABA6EA4A48CA47FD836097ED /* image_track */;
-			targetProxy = AB2B4ACEB31546D9BC86A9A0 /* PBXContainerItemProxy */;
-		};
-		A40A366BEAF74272BEDB93C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D5B2325B407040408443A7B9 /* ZERO_CHECK */;
-			targetProxy = 11FB2E2C819C481F8127D60F /* PBXContainerItemProxy */;
-		};
-		BC3C0140E1A54C678C97EFDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D5B2325B407040408443A7B9 /* ZERO_CHECK */;
-			targetProxy = 5185A90F19D645658CF8CC98 /* PBXContainerItemProxy */;
-		};
-		CEE6955B7EC840E4A7E67A21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 46A2153FA7AE4F58AC53EEE1 /* image_add */;
-			targetProxy = DDD7DD6D346442B48D6FF626 /* PBXContainerItemProxy */;
-		};
-		D8FD5D56FB0A4B4A990A194A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 957953CD783849599F446015 /* trackFilteredObject */;
-			targetProxy = 4E82BDFB45AC48C5B63165DE /* PBXContainerItemProxy */;
+			target = 0700D1EB21834682B380AC05 /* Serial */;
+			targetProxy = FCBDF739EF33435486CB8F10 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04BDD7D6948847F8B7717DD7 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/build;
-			};
-			name = RelWithDebInfo;
-		};
-		0EA93C679C7C463A8241014E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/build;
-			};
-			name = Release;
-		};
-		1C9D9B59FF184B078DA85805 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		286AEC80EEDF4BBDB75B6E4F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		2B6951EA89114FD495343C33 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = image_add;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		332105FEF5E44E3EA9F8CCC7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		54B4AA00A0F94569BA8E49ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = trackFilteredObject;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		59F3EBED27C5460683B1EE5B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = image_track;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		5C3AE5610E76479A9907AA5E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		61191D477A91454885BB9C1F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = image_add;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		63869E7E4C7A4E18A65212FF /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = image_track;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		69605E872B7C4DA58EEC8C57 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = image_add;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		6C428B82AF2146CD8749CD39 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_videostab.2.4.13.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.13.dylib /usr/local/lib/libopencv_stitching.2.4.13.dylib /usr/local/lib/libopencv_contrib.2.4.13.dylib /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/MinSizeRel/libimage_add.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/MinSizeRel/libimage_track.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/MinSizeRel/libtrackFilteredObject.a /usr/local/lib/libopencv_nonfree.2.4.13.dylib /usr/local/lib/libopencv_ocl.2.4.13.dylib /usr/local/lib/libopencv_gpu.2.4.13.dylib /usr/local/lib/libopencv_photo.2.4.13.dylib /usr/local/lib/libopencv_objdetect.2.4.13.dylib /usr/local/lib/libopencv_legacy.2.4.13.dylib /usr/local/lib/libopencv_video.2.4.13.dylib /usr/local/lib/libopencv_ml.2.4.13.dylib /usr/local/lib/libopencv_calib3d.2.4.13.dylib /usr/local/lib/libopencv_features2d.2.4.13.dylib /usr/local/lib/libopencv_highgui.2.4.13.dylib /usr/local/lib/libopencv_imgproc.2.4.13.dylib /usr/local/lib/libopencv_flann.2.4.13.dylib /usr/local/lib/libopencv_core.2.4.13.dylib -framework OpenCL";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = main;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		6D0E54ABA9F346B89EA594CF /* RelWithDebInfo */ = {
+		06CB688F2DC44955A233CCF8 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -871,7 +681,16 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		7E807203F3D44BA0BD4FCB74 /* MinSizeRel */ = {
+		0A21B1B7CE6145D09488EE89 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/build;
+			};
+			name = RelWithDebInfo;
+		};
+		0EF05F1E536943D1BAF34630 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -884,40 +703,15 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = MinSizeRel;
+			name = Release;
 		};
-		823366C8CEC14A1A93016843 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = trackFilteredObject;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		A88E963367F540AEA2B0EA3A /* MinSizeRel */ = {
+		10509AAF12B740B0ACC4B452 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ONLY_ACTIVE_ARCH = YES;
@@ -926,7 +720,7 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		AB7F3F61CB0C4981894C7D09 /* RelWithDebInfo */ = {
+		157A84CB487E4E13B82DA6D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -945,9 +739,9 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = RelWithDebInfo;
+			name = Debug;
 		};
-		BC7741AAB33B46929D94D621 /* Debug */ = {
+		3338C4E4978F44F084A4DBE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -962,7 +756,7 @@ exit 0";
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CPLUSPLUSFLAGS = "    ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_videostab.2.4.13.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.13.dylib /usr/local/lib/libopencv_stitching.2.4.13.dylib /usr/local/lib/libopencv_contrib.2.4.13.dylib /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Debug/libimage_add.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Debug/libimage_track.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Debug/libtrackFilteredObject.a /usr/local/lib/libopencv_nonfree.2.4.13.dylib /usr/local/lib/libopencv_ocl.2.4.13.dylib /usr/local/lib/libopencv_gpu.2.4.13.dylib /usr/local/lib/libopencv_photo.2.4.13.dylib /usr/local/lib/libopencv_objdetect.2.4.13.dylib /usr/local/lib/libopencv_legacy.2.4.13.dylib /usr/local/lib/libopencv_video.2.4.13.dylib /usr/local/lib/libopencv_ml.2.4.13.dylib /usr/local/lib/libopencv_calib3d.2.4.13.dylib /usr/local/lib/libopencv_features2d.2.4.13.dylib /usr/local/lib/libopencv_highgui.2.4.13.dylib /usr/local/lib/libopencv_imgproc.2.4.13.dylib /usr/local/lib/libopencv_flann.2.4.13.dylib /usr/local/lib/libopencv_core.2.4.13.dylib -framework OpenCL";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_videostab.2.4.13.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.13.dylib /usr/local/lib/libopencv_stitching.2.4.13.dylib /usr/local/lib/libopencv_contrib.2.4.13.dylib /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Debug/libimage_add.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Debug/libimage_track.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Debug/libtrackFilteredObject.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Debug/libSerial.a /usr/local/lib/libopencv_nonfree.2.4.13.dylib /usr/local/lib/libopencv_ocl.2.4.13.dylib /usr/local/lib/libopencv_gpu.2.4.13.dylib /usr/local/lib/libopencv_photo.2.4.13.dylib /usr/local/lib/libopencv_objdetect.2.4.13.dylib /usr/local/lib/libopencv_legacy.2.4.13.dylib /usr/local/lib/libopencv_video.2.4.13.dylib /usr/local/lib/libopencv_ml.2.4.13.dylib /usr/local/lib/libopencv_calib3d.2.4.13.dylib /usr/local/lib/libopencv_features2d.2.4.13.dylib /usr/local/lib/libopencv_highgui.2.4.13.dylib /usr/local/lib/libopencv_imgproc.2.4.13.dylib /usr/local/lib/libopencv_flann.2.4.13.dylib /usr/local/lib/libopencv_core.2.4.13.dylib -framework OpenCL";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = main;
 				SECTORDER_FLAGS = "";
@@ -972,7 +766,183 @@ exit 0";
 			};
 			name = Debug;
 		};
-		BEF93BEE39AC4039B9D7434C /* RelWithDebInfo */ = {
+		4157CAD4EF7345D4B6F88A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = image_add;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		45CF774A75D04149838303A5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_videostab.2.4.13.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.13.dylib /usr/local/lib/libopencv_stitching.2.4.13.dylib /usr/local/lib/libopencv_contrib.2.4.13.dylib /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/MinSizeRel/libimage_add.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/MinSizeRel/libimage_track.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/MinSizeRel/libtrackFilteredObject.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/MinSizeRel/libSerial.a /usr/local/lib/libopencv_nonfree.2.4.13.dylib /usr/local/lib/libopencv_ocl.2.4.13.dylib /usr/local/lib/libopencv_gpu.2.4.13.dylib /usr/local/lib/libopencv_photo.2.4.13.dylib /usr/local/lib/libopencv_objdetect.2.4.13.dylib /usr/local/lib/libopencv_legacy.2.4.13.dylib /usr/local/lib/libopencv_video.2.4.13.dylib /usr/local/lib/libopencv_ml.2.4.13.dylib /usr/local/lib/libopencv_calib3d.2.4.13.dylib /usr/local/lib/libopencv_features2d.2.4.13.dylib /usr/local/lib/libopencv_highgui.2.4.13.dylib /usr/local/lib/libopencv_imgproc.2.4.13.dylib /usr/local/lib/libopencv_flann.2.4.13.dylib /usr/local/lib/libopencv_core.2.4.13.dylib -framework OpenCL";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4DE681D48C494A8EAE86680C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		55E3F41446714A4CB73A0A01 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Serial;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		58F23A3CAA5C40A28F6C21A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/build;
+			};
+			name = Release;
+		};
+		5D269CC5A2E74AD19D6E7EE7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5D7793FA9D994B5ABF507A87 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = image_add;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5DFBE7276C924932A704347C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = trackFilteredObject;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		67C5AA5A948940F084A7F886 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -997,41 +967,53 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		C595D94F811749A188DE1E56 /* RelWithDebInfo */ = {
+		6A76F4A897C5485D84E3351B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_videostab.2.4.13.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.13.dylib /usr/local/lib/libopencv_stitching.2.4.13.dylib /usr/local/lib/libopencv_contrib.2.4.13.dylib /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/RelWithDebInfo/libimage_add.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/RelWithDebInfo/libimage_track.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/RelWithDebInfo/libtrackFilteredObject.a /usr/local/lib/libopencv_nonfree.2.4.13.dylib /usr/local/lib/libopencv_ocl.2.4.13.dylib /usr/local/lib/libopencv_gpu.2.4.13.dylib /usr/local/lib/libopencv_photo.2.4.13.dylib /usr/local/lib/libopencv_objdetect.2.4.13.dylib /usr/local/lib/libopencv_legacy.2.4.13.dylib /usr/local/lib/libopencv_video.2.4.13.dylib /usr/local/lib/libopencv_ml.2.4.13.dylib /usr/local/lib/libopencv_calib3d.2.4.13.dylib /usr/local/lib/libopencv_features2d.2.4.13.dylib /usr/local/lib/libopencv_highgui.2.4.13.dylib /usr/local/lib/libopencv_imgproc.2.4.13.dylib /usr/local/lib/libopencv_flann.2.4.13.dylib /usr/local/lib/libopencv_core.2.4.13.dylib -framework OpenCL";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = main;
+				PRODUCT_NAME = trackFilteredObject;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = RelWithDebInfo;
+			name = Release;
 		};
-		CB53DAC3CEC94C2FBF12C78F /* Debug */ = {
+		70B00DDDFBE149A8B59A0DEA /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/build;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = Debug;
+			name = MinSizeRel;
 		};
-		D387335BA73A47A1BF4D226E /* MinSizeRel */ = {
+		74EB18E9855049FA992BBC24 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1056,53 +1038,7 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		E423146E17904C9EAE52223A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_videostab.2.4.13.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.13.dylib /usr/local/lib/libopencv_stitching.2.4.13.dylib /usr/local/lib/libopencv_contrib.2.4.13.dylib /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Release/libimage_add.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Release/libimage_track.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Release/libtrackFilteredObject.a /usr/local/lib/libopencv_nonfree.2.4.13.dylib /usr/local/lib/libopencv_ocl.2.4.13.dylib /usr/local/lib/libopencv_gpu.2.4.13.dylib /usr/local/lib/libopencv_photo.2.4.13.dylib /usr/local/lib/libopencv_objdetect.2.4.13.dylib /usr/local/lib/libopencv_legacy.2.4.13.dylib /usr/local/lib/libopencv_video.2.4.13.dylib /usr/local/lib/libopencv_ml.2.4.13.dylib /usr/local/lib/libopencv_calib3d.2.4.13.dylib /usr/local/lib/libopencv_features2d.2.4.13.dylib /usr/local/lib/libopencv_highgui.2.4.13.dylib /usr/local/lib/libopencv_imgproc.2.4.13.dylib /usr/local/lib/libopencv_flann.2.4.13.dylib /usr/local/lib/libopencv_core.2.4.13.dylib -framework OpenCL";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = main;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		EE22C0E8CF5742EB9736FFB7 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		EE274971C3F54A32AF491D41 /* Release */ = {
+		7CB16C8B1E154FA7A7ACE24F /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1110,7 +1046,7 @@ exit 0";
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
@@ -1119,15 +1055,15 @@ exit 0";
 				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = trackFilteredObject;
+				PRODUCT_NAME = image_track;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = Release;
+			name = MinSizeRel;
 		};
-		EF7C134F09D741188E8BB2F7 /* Debug */ = {
+		8FD28483B49A43738A00EF85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1152,7 +1088,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		F2C1EC36100F411D815CFE73 /* Debug */ = {
+		A025956DF0F7485FAE99A5EA /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1165,90 +1101,352 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A5F650336A9A4A0ABE51A99C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = trackFilteredObject;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B24E49FD6AF64084B34CEEA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/build;
+			};
+			name = Debug;
+		};
+		B88038D7B6A74B03A8105EF5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Serial;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BD44307441D24512A8457B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_videostab.2.4.13.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.13.dylib /usr/local/lib/libopencv_stitching.2.4.13.dylib /usr/local/lib/libopencv_contrib.2.4.13.dylib /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Release/libimage_add.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Release/libimage_track.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Release/libtrackFilteredObject.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/Release/libSerial.a /usr/local/lib/libopencv_nonfree.2.4.13.dylib /usr/local/lib/libopencv_ocl.2.4.13.dylib /usr/local/lib/libopencv_gpu.2.4.13.dylib /usr/local/lib/libopencv_photo.2.4.13.dylib /usr/local/lib/libopencv_objdetect.2.4.13.dylib /usr/local/lib/libopencv_legacy.2.4.13.dylib /usr/local/lib/libopencv_video.2.4.13.dylib /usr/local/lib/libopencv_ml.2.4.13.dylib /usr/local/lib/libopencv_calib3d.2.4.13.dylib /usr/local/lib/libopencv_features2d.2.4.13.dylib /usr/local/lib/libopencv_highgui.2.4.13.dylib /usr/local/lib/libopencv_imgproc.2.4.13.dylib /usr/local/lib/libopencv_flann.2.4.13.dylib /usr/local/lib/libopencv_core.2.4.13.dylib -framework OpenCL";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		C17C2184985642CE8F20A3F3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_videostab.2.4.13.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.13.dylib /usr/local/lib/libopencv_stitching.2.4.13.dylib /usr/local/lib/libopencv_contrib.2.4.13.dylib /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/RelWithDebInfo/libimage_add.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/RelWithDebInfo/libimage_track.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/RelWithDebInfo/libtrackFilteredObject.a /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/RelWithDebInfo/libSerial.a /usr/local/lib/libopencv_nonfree.2.4.13.dylib /usr/local/lib/libopencv_ocl.2.4.13.dylib /usr/local/lib/libopencv_gpu.2.4.13.dylib /usr/local/lib/libopencv_photo.2.4.13.dylib /usr/local/lib/libopencv_objdetect.2.4.13.dylib /usr/local/lib/libopencv_legacy.2.4.13.dylib /usr/local/lib/libopencv_video.2.4.13.dylib /usr/local/lib/libopencv_ml.2.4.13.dylib /usr/local/lib/libopencv_calib3d.2.4.13.dylib /usr/local/lib/libopencv_features2d.2.4.13.dylib /usr/local/lib/libopencv_highgui.2.4.13.dylib /usr/local/lib/libopencv_imgproc.2.4.13.dylib /usr/local/lib/libopencv_flann.2.4.13.dylib /usr/local/lib/libopencv_core.2.4.13.dylib -framework OpenCL";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C2FC0F4C5DD84718A8B94E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Serial;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = Debug;
+		};
+		C941A408840E4576981F1D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Serial;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		CF9E3F2350284B53861BEF60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D831FA67067047DFB5E8C921 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = image_track;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F71AE9AB6AFC499F967083C4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FF99AD90D822428BBF31398C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include/opencv,/usr/local/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = image_add;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		157E172B64AC453CAD1F33D6 /* Build configuration list for PBXNativeTarget "image_track" */ = {
+		23FA60A8DEC843A4A08402C8 /* Build configuration list for PBXNativeTarget "trackFilteredObject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF7C134F09D741188E8BB2F7 /* Debug */,
-				59F3EBED27C5460683B1EE5B /* Release */,
-				63869E7E4C7A4E18A65212FF /* MinSizeRel */,
-				6D0E54ABA9F346B89EA594CF /* RelWithDebInfo */,
+				5DFBE7276C924932A704347C /* Debug */,
+				6A76F4A897C5485D84E3351B /* Release */,
+				A5F650336A9A4A0ABE51A99C /* MinSizeRel */,
+				67C5AA5A948940F084A7F886 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		19AA130CEB914EAF842C3A8B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		466E05067385405381BBD5DE /* Build configuration list for PBXProject "main" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				332105FEF5E44E3EA9F8CCC7 /* Debug */,
-				5C3AE5610E76479A9907AA5E /* Release */,
-				1C9D9B59FF184B078DA85805 /* MinSizeRel */,
-				EE22C0E8CF5742EB9736FFB7 /* RelWithDebInfo */,
+				B24E49FD6AF64084B34CEEA4 /* Debug */,
+				58F23A3CAA5C40A28F6C21A7 /* Release */,
+				10509AAF12B740B0ACC4B452 /* MinSizeRel */,
+				0A21B1B7CE6145D09488EE89 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		70D89E727554450688B8E772 /* Build configuration list for PBXNativeTarget "trackFilteredObject" */ = {
+		58D94573F37B426AAA322D22 /* Build configuration list for PBXNativeTarget "image_add" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				54B4AA00A0F94569BA8E49ED /* Debug */,
-				EE274971C3F54A32AF491D41 /* Release */,
-				823366C8CEC14A1A93016843 /* MinSizeRel */,
-				BEF93BEE39AC4039B9D7434C /* RelWithDebInfo */,
+				4157CAD4EF7345D4B6F88A23 /* Debug */,
+				FF99AD90D822428BBF31398C /* Release */,
+				74EB18E9855049FA992BBC24 /* MinSizeRel */,
+				5D7793FA9D994B5ABF507A87 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		AED3E9083E9645CFA8A119DA /* Build configuration list for PBXProject "main" */ = {
+		6469C24339C74D72B65F1650 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB53DAC3CEC94C2FBF12C78F /* Debug */,
-				0EA93C679C7C463A8241014E /* Release */,
-				A88E963367F540AEA2B0EA3A /* MinSizeRel */,
-				04BDD7D6948847F8B7717DD7 /* RelWithDebInfo */,
+				157A84CB487E4E13B82DA6D9 /* Debug */,
+				4DE681D48C494A8EAE86680C /* Release */,
+				70B00DDDFBE149A8B59A0DEA /* MinSizeRel */,
+				5D269CC5A2E74AD19D6E7EE7 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B6AE2C83CB424D17A60D7FB9 /* Build configuration list for PBXNativeTarget "image_add" */ = {
+		7ED78A87B3F741F4817608FA /* Build configuration list for PBXNativeTarget "image_track" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				69605E872B7C4DA58EEC8C57 /* Debug */,
-				61191D477A91454885BB9C1F /* Release */,
-				D387335BA73A47A1BF4D226E /* MinSizeRel */,
-				2B6951EA89114FD495343C33 /* RelWithDebInfo */,
+				8FD28483B49A43738A00EF85 /* Debug */,
+				D831FA67067047DFB5E8C921 /* Release */,
+				7CB16C8B1E154FA7A7ACE24F /* MinSizeRel */,
+				06CB688F2DC44955A233CCF8 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		BCA06134663149C59194EDC5 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		E6319634F0E44410B1C10C8F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F2C1EC36100F411D815CFE73 /* Debug */,
-				286AEC80EEDF4BBDB75B6E4F /* Release */,
-				7E807203F3D44BA0BD4FCB74 /* MinSizeRel */,
-				AB7F3F61CB0C4981894C7D09 /* RelWithDebInfo */,
+				CF9E3F2350284B53861BEF60 /* Debug */,
+				0EF05F1E536943D1BAF34630 /* Release */,
+				A025956DF0F7485FAE99A5EA /* MinSizeRel */,
+				F71AE9AB6AFC499F967083C4 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D2636F28208C42CF9A7BDA25 /* Build configuration list for PBXNativeTarget "main" */ = {
+		EECA88CBA5714CC3B532A5E9 /* Build configuration list for PBXNativeTarget "Serial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC7741AAB33B46929D94D621 /* Debug */,
-				E423146E17904C9EAE52223A /* Release */,
-				6C428B82AF2146CD8749CD39 /* MinSizeRel */,
-				C595D94F811749A188DE1E56 /* RelWithDebInfo */,
+				C2FC0F4C5DD84718A8B94E29 /* Debug */,
+				C941A408840E4576981F1D0D /* Release */,
+				B88038D7B6A74B03A8105EF5 /* MinSizeRel */,
+				55E3F41446714A4CB73A0A01 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F64AB464B87646DABF1DB8F4 /* Build configuration list for PBXNativeTarget "main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3338C4E4978F44F084A4DBE2 /* Debug */,
+				BD44307441D24512A8457B2C /* Release */,
+				45CF774A75D04149838303A5 /* MinSizeRel */,
+				C17C2184985642CE8F20A3F3 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

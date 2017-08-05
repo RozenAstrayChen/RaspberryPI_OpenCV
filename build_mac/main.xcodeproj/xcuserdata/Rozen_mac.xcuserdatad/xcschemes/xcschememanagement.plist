@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Serial.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>ZERO_CHECK.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -29,6 +34,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>serial.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>trackFilteredObject.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -37,6 +47,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0700D1EB21834682B380AC05</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>208B50D61AB74DDDB07219B7</key>
 		<dict>
 			<key>primary</key>
@@ -53,6 +68,11 @@
 			<true/>
 		</dict>
 		<key>9CE81928471841C282DC0431</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0579F1ACE8349C2B0867459</key>
 		<dict>
 			<key>primary</key>
 			<true/>

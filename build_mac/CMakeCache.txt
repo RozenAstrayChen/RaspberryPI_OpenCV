@@ -197,6 +197,9 @@ OpenCV_LIB_DIR_DBG:PATH=
 OpenCV_LIB_DIR_OPT:PATH=
 
 //Dependencies for target
+Serial_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
 image_add_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
@@ -210,6 +213,9 @@ main_SOURCE_DIR:STATIC=/Users/Rozen_mac/code/opencv/project/cmake_test
 
 //Dependencies for target
 mylib_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+serial_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 trackFilteredObject_LIB_DEPENDS:STATIC=
@@ -351,6 +357,8 @@ OpenCV_LIB_DIR_OPT-ADVANCED:INTERNAL=1
 //Stored Xcode object GUID
 PROJECT_main_GUID_CMAKE:INTERNAL=903680E374594A1E8F566AC5
 //Stored Xcode object GUID
+Serial_GUID_CMAKE:INTERNAL=0700D1EB21834682B380AC05
+//Stored Xcode object GUID
 ZERO_CHECK_GUID_CMAKE:INTERNAL=D5B2325B407040408443A7B9
 //Stored Xcode object GUID
 image_add_GUID_CMAKE:INTERNAL=46A2153FA7AE4F58AC53EEE1
@@ -360,6 +368,8 @@ image_track_GUID_CMAKE:INTERNAL=ABA6EA4A48CA47FD836097ED
 main_GUID_CMAKE:INTERNAL=208B50D61AB74DDDB07219B7
 //Stored Xcode object GUID
 mylib_GUID_CMAKE:INTERNAL=9BEC4FB9E7D543FCAEED2565
+//Stored Xcode object GUID
+serial_GUID_CMAKE:INTERNAL=A0579F1ACE8349C2B0867459
 //Stored Xcode object GUID
 trackFilteredObject_GUID_CMAKE:INTERNAL=957953CD783849599F446015
 

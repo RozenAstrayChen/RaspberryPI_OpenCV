@@ -15,7 +15,14 @@
 #include <stdio.h>
 #include <iostream>
 #include <opencv2/opencv.hpp>
+#ifdef __unix
+     #include <raspicam/raspicam_cv.h>
+#elif __APPLE__
 
+#else
+
+
+#endif
 #endif /* trackFilteredObject_hpp */
 using namespace std;
 using namespace cv;
@@ -25,7 +32,14 @@ static cv::Mat image_frame;
 class trackFiliteredObject{
 public:
     trackFiliteredObject();
-    void test_hsv(cv::VideoCapture video);
+    #ifdef __unix
+        void test_hsv(raspicam::RaspiCam_Cv video);
+    #elif __APPLE__
+        void test_hsv(cv::VideoCapture video);
+    #else
+    
+    #endif
+    
     void createTrackbars(void);
     void morphOps(cv::Mat &thresh);
     void trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFeed);
