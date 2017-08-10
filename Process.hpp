@@ -10,19 +10,25 @@
 #define Process_hpp
 
 #include <stdio.h>
-#include <thread>
-#include <future>
-#include "Control.hpp"
 #include "trackFilteredObject.hpp"
+#include "Serial.hpp"
+#include <string>
+#include <iostream>
+#include <termios.h>  // for tcxxxattr, ECHO, etc ..
+#include <unistd.h>   // for STDIN_FILENO
+
+#ifdef __unix
+#include <cstring>
+#endif
 
 
-//class Process:public trackFiliteredObject,public Control;
 
-class Process: public trackFiliteredObject,public Control{
+
+class Process: public trackFiliteredObject,public mySerial{
 public:
 #ifdef __APPLE__
     
-    Process(string deviceName, int baud ,VideoCapture& video_temp):Control(deviceName,baud){
+    Process(string deviceName, int baud ,VideoCapture& video_temp):mySerial(deviceName,baud){
         this->video = video;
     }
     //Process(string deviceName, int baud ,VideoCapture& video){
@@ -31,7 +37,7 @@ public:
     
     
 #elif  __unix
-    Process(string deviceName, int baud ,raspicam::RaspiCam_Cv& video):Control(deviceName,baud){
+    Process(string deviceName, int baud ,raspicam::RaspiCam_Cv& video):mySerial(deviceName,baud){
         this->video = video;
     }
     
@@ -44,11 +50,14 @@ public:
     void trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFeed) override;
     void CalculateDirection();
     void CalculateDistance();
-    void Control_left(int value) override;
-    void Control_right(int value) override;
-    void Control_ahead(int value) override;
-    void Control_Back(int value) override;
-    void Control_Turn_back(int value) override;
+    void Control_left(int value) ;
+    void Control_right(int value) ;
+    void Control_ahead(int value) ;
+    void Control_Back(int value) ;
+    void Control_Turn_back(int value) ;
+    string byte2_4byte(int value) ;
+    /*input one char without "\n"*/
+    int getch(void);
 private:
     /*
      * left 0~399

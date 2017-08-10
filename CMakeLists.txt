@@ -40,7 +40,6 @@ TARGET_LINK_LIBRARIES (main image_add)
 TARGET_LINK_LIBRARIES (main image_track)
 TARGET_LINK_LIBRARIES (main trackFilteredObject)
 TARGET_LINK_LIBRARIES (main Serial)
-TARGET_LINK_LIBRARIES (main Control)
 TARGET_LINK_LIBRARIES (main Process)
 
 #raspberry
@@ -58,7 +57,6 @@ ADD_LIBRARY (image_add image_add.cpp)
 ADD_LIBRARY (image_track image_track.cpp)
 ADD_LIBRARY (trackFilteredObject trackFilteredObject.cpp)
 ADD_LIBRARY (Serial Serial.cpp)
-ADD_LIBRARY (Control Control.cpp)
 ADD_LIBRARY (Process Process.cpp)
 
 #raspberry

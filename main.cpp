@@ -44,8 +44,10 @@ int main(int argc, char *argv[])
     #elif __APPLE__
     VideoCapture video(0);
     Process process("/dev/ttyUSB0",115200,video);
-    process.Proecess_track();
+    
+    //process.Proecess_track();
     video.release();
+
     #elif __unix
     printf("UNIX\n");
     RaspiCam_Cv video ;

@@ -9,25 +9,65 @@
 #include "Process.hpp"
 
 using namespace std;
-void Control::Control_left(int value){
-    byte2_4byte(value);
-    Send(value);
+int Process::getch(){
+    int ch;
+    struct termios oldt, newt;
+    
+    tcgetattr(STDIN_FILENO, &oldt);
+    memcpy(&newt, &oldt, sizeof(newt));
+    newt.c_lflag &= ~( ECHO | ICANON | ECHOE | ECHOK |
+                      ECHONL | ECHOPRT | ECHOKE | ICRNL);
+    tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+    ch = getchar();
+    tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+    
+    return ch;
 }
-void Control::Control_right(int value){
-    byte2_4byte(value);
-    Send(value);
+void Process::Control_left(int value){
+    
+    string s = byte2_4byte(value);
+    cout << s << endl;
+    Send(s);
 }
-void Control::Control_ahead(int value){
-    byte2_4byte(value);
-    Send(value);
+void Process::Control_right(int value){
+    
+    string s = byte2_4byte(value);
+    Send(s);
 }
-void Control::Control_Back(int value){
-    byte2_4byte(value);
-    Send(value);
+void Process::Control_ahead(int value){
+    
+    string s = byte2_4byte(value);
+    Send(s);
 }
-void Control::Control_Turn_back(int value){
-    byte2_4byte(value);
-    Send(value);
+void Process::Control_Back(int value){
+    
+
+    string s = byte2_4byte(value);
+    cout << s << endl;
+    Send(s);
+}
+void Process::Control_Turn_back(int value){
+
+    string s = byte2_4byte(value);
+    cout << s << endl;
+    Send(s);
+}
+string Process::byte2_4byte(int value){
+    int value_int = (int)value;
+    char* temp = nullptr;
+    
+    string s = to_string(value_int);
+    if(s.size()<4){
+        sprintf(temp, "%04d",value_int);
+        s.assign(temp);
+        
+    }else if(s.size()>4){
+        return "funcking_error";
+    }else{
+        
+    }
+    cout << s << endl;
+    return  s;
 }
 
 /*Override test_hsv function,in order to use rs232  translation*/
@@ -46,7 +86,7 @@ void Process::Proecess_track(){
 #ifdef __APPLE__
         Multiple_inRanage(hsv, threshold, morring);
 #elif __unix
-        Multiple_inRanage(hsv, threshold, morring_pi);
+        Multiple_inRanage(hsv, threshold, night );
 #endif
         cv::inRange(hsv,Scalar(H_MIN,S_MIN,V_MIN),Scalar(H_MAX,S_MAX,V_MAX), threshold);
         
@@ -59,8 +99,8 @@ void Process::Proecess_track(){
         imshow("testing on HSV", threshold);
         imshow("camerafeed", image_frame);
 #elif __unix
-        imshow("testing on HSV", threshold);
-        imshow("camerafeed", image_frame);
+        //imshow("testing on HSV", threshold);
+        //imshow("camerafeed", image_frame);
 #endif
         
         char c = (char)cv::waitKey(1000/15.0);

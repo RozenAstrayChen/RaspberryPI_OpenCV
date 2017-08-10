@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/OpenCV/cmake_test/image_add.cpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/image_add.cpp
 image_add.hpp
-/home/pi/OpenCV/cmake_test/image_add.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/image_add.hpp
 
-/home/pi/OpenCV/cmake_test/image_add.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/image_add.hpp
 stdio.h
 -
 opencv2/core/core.hpp
-/home/pi/OpenCV/cmake_test/opencv2/core/core.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/opencv2/core/core.hpp
 opencv2/highgui/highgui.hpp
-/home/pi/OpenCV/cmake_test/opencv2/highgui/highgui.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
-/home/pi/OpenCV/cmake_test/opencv2/imgproc/imgproc.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/opencv2/imgproc/imgproc.hpp
 

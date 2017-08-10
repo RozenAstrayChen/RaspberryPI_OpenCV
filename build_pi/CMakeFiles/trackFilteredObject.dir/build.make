@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/OpenCV/cmake_test
+CMAKE_SOURCE_DIR = /home/pi/OpenCV/RaspberryPI_OpenCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/OpenCV/cmake_test/build_pi
+CMAKE_BINARY_DIR = /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi
 
 # Include any dependencies generated for this target.
 include CMakeFiles/trackFilteredObject.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/trackFilteredObject.dir/flags.make
 
 CMakeFiles/trackFilteredObject.dir/trackFilteredObject.o: CMakeFiles/trackFilteredObject.dir/flags.make
 CMakeFiles/trackFilteredObject.dir/trackFilteredObject.o: ../trackFilteredObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/trackFilteredObject.dir/trackFilteredObject.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trackFilteredObject.dir/trackFilteredObject.o -c /home/pi/OpenCV/cmake_test/trackFilteredObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/trackFilteredObject.dir/trackFilteredObject.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trackFilteredObject.dir/trackFilteredObject.o -c /home/pi/OpenCV/RaspberryPI_OpenCV/trackFilteredObject.cpp
 
 CMakeFiles/trackFilteredObject.dir/trackFilteredObject.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trackFilteredObject.dir/trackFilteredObject.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/OpenCV/cmake_test/trackFilteredObject.cpp > CMakeFiles/trackFilteredObject.dir/trackFilteredObject.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/OpenCV/RaspberryPI_OpenCV/trackFilteredObject.cpp > CMakeFiles/trackFilteredObject.dir/trackFilteredObject.i
 
 CMakeFiles/trackFilteredObject.dir/trackFilteredObject.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trackFilteredObject.dir/trackFilteredObject.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/OpenCV/cmake_test/trackFilteredObject.cpp -o CMakeFiles/trackFilteredObject.dir/trackFilteredObject.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/OpenCV/RaspberryPI_OpenCV/trackFilteredObject.cpp -o CMakeFiles/trackFilteredObject.dir/trackFilteredObject.s
 
 CMakeFiles/trackFilteredObject.dir/trackFilteredObject.o.requires:
 
@@ -91,7 +91,7 @@ trackFilteredObject_EXTERNAL_OBJECTS =
 libtrackFilteredObject.a: CMakeFiles/trackFilteredObject.dir/trackFilteredObject.o
 libtrackFilteredObject.a: CMakeFiles/trackFilteredObject.dir/build.make
 libtrackFilteredObject.a: CMakeFiles/trackFilteredObject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libtrackFilteredObject.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libtrackFilteredObject.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/trackFilteredObject.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/trackFilteredObject.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/trackFilteredObject.dir/clean:
 .PHONY : CMakeFiles/trackFilteredObject.dir/clean
 
 CMakeFiles/trackFilteredObject.dir/depend:
-	cd /home/pi/OpenCV/cmake_test/build_pi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/OpenCV/cmake_test /home/pi/OpenCV/cmake_test /home/pi/OpenCV/cmake_test/build_pi /home/pi/OpenCV/cmake_test/build_pi /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/trackFilteredObject.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/OpenCV/RaspberryPI_OpenCV /home/pi/OpenCV/RaspberryPI_OpenCV /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/trackFilteredObject.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/trackFilteredObject.dir/depend
 

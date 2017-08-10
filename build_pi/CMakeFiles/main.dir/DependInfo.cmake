@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/OpenCV/cmake_test/main.cpp" "/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/main.dir/main.o"
+  "/home/pi/OpenCV/RaspberryPI_OpenCV/main.cpp" "/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/main.dir/main.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,13 +16,12 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/image_add.dir/DependInfo.cmake"
-  "/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/image_track.dir/DependInfo.cmake"
-  "/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/trackFilteredObject.dir/DependInfo.cmake"
-  "/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/Serial.dir/DependInfo.cmake"
-  "/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/Control.dir/DependInfo.cmake"
-  "/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/Process.dir/DependInfo.cmake"
-  "/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/image_track_pi.dir/DependInfo.cmake"
+  "/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/image_add.dir/DependInfo.cmake"
+  "/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/image_track.dir/DependInfo.cmake"
+  "/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/trackFilteredObject.dir/DependInfo.cmake"
+  "/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/Serial.dir/DependInfo.cmake"
+  "/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/Process.dir/DependInfo.cmake"
+  "/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/image_track_pi.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

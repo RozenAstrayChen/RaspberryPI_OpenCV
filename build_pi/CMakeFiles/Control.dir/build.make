@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/OpenCV/cmake_test
+CMAKE_SOURCE_DIR = /home/pi/OpenCV/RaspberryPI_OpenCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/OpenCV/cmake_test/build_pi
+CMAKE_BINARY_DIR = /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Control.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Control.dir/flags.make
 
 CMakeFiles/Control.dir/Control.o: CMakeFiles/Control.dir/flags.make
 CMakeFiles/Control.dir/Control.o: ../Control.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Control.dir/Control.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Control.dir/Control.o -c /home/pi/OpenCV/cmake_test/Control.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Control.dir/Control.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Control.dir/Control.o -c /home/pi/OpenCV/RaspberryPI_OpenCV/Control.cpp
 
 CMakeFiles/Control.dir/Control.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Control.dir/Control.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/OpenCV/cmake_test/Control.cpp > CMakeFiles/Control.dir/Control.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/OpenCV/RaspberryPI_OpenCV/Control.cpp > CMakeFiles/Control.dir/Control.i
 
 CMakeFiles/Control.dir/Control.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Control.dir/Control.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/OpenCV/cmake_test/Control.cpp -o CMakeFiles/Control.dir/Control.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/OpenCV/RaspberryPI_OpenCV/Control.cpp -o CMakeFiles/Control.dir/Control.s
 
 CMakeFiles/Control.dir/Control.o.requires:
 
@@ -91,7 +91,7 @@ Control_EXTERNAL_OBJECTS =
 libControl.a: CMakeFiles/Control.dir/Control.o
 libControl.a: CMakeFiles/Control.dir/build.make
 libControl.a: CMakeFiles/Control.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libControl.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libControl.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Control.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Control.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/Control.dir/clean:
 .PHONY : CMakeFiles/Control.dir/clean
 
 CMakeFiles/Control.dir/depend:
-	cd /home/pi/OpenCV/cmake_test/build_pi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/OpenCV/cmake_test /home/pi/OpenCV/cmake_test /home/pi/OpenCV/cmake_test/build_pi /home/pi/OpenCV/cmake_test/build_pi /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/Control.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/OpenCV/RaspberryPI_OpenCV /home/pi/OpenCV/RaspberryPI_OpenCV /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/Control.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Control.dir/depend
 

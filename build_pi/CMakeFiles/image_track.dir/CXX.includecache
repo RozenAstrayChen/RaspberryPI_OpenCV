@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/OpenCV/cmake_test/image_track.cpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/image_track.cpp
 image_track.hpp
-/home/pi/OpenCV/cmake_test/image_track.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/image_track.hpp
 
-/home/pi/OpenCV/cmake_test/image_track.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/image_track.hpp
 iostream
 -
 string

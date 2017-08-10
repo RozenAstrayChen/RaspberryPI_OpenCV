@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/OpenCV/cmake_test/Serial.cpp" "/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/Serial.dir/Serial.o"
+  "/home/pi/OpenCV/RaspberryPI_OpenCV/Serial.cpp" "/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/Serial.dir/Serial.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

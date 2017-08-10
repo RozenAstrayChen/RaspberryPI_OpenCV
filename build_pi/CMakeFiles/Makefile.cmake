@@ -46,9 +46,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Process.dir/DependInfo.cmake"
   "CMakeFiles/image_track_pi.dir/DependInfo.cmake"
-  "CMakeFiles/Control.dir/DependInfo.cmake"
+  "CMakeFiles/Process.dir/DependInfo.cmake"
   "CMakeFiles/Serial.dir/DependInfo.cmake"
   "CMakeFiles/trackFilteredObject.dir/DependInfo.cmake"
   "CMakeFiles/image_add.dir/DependInfo.cmake"

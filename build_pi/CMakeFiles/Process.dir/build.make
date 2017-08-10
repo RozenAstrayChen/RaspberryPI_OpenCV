@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/OpenCV/cmake_test
+CMAKE_SOURCE_DIR = /home/pi/OpenCV/RaspberryPI_OpenCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/OpenCV/cmake_test/build_pi
+CMAKE_BINARY_DIR = /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Process.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Process.dir/flags.make
 
 CMakeFiles/Process.dir/Process.o: CMakeFiles/Process.dir/flags.make
 CMakeFiles/Process.dir/Process.o: ../Process.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Process.dir/Process.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Process.dir/Process.o -c /home/pi/OpenCV/cmake_test/Process.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Process.dir/Process.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Process.dir/Process.o -c /home/pi/OpenCV/RaspberryPI_OpenCV/Process.cpp
 
 CMakeFiles/Process.dir/Process.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Process.dir/Process.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/OpenCV/cmake_test/Process.cpp > CMakeFiles/Process.dir/Process.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/OpenCV/RaspberryPI_OpenCV/Process.cpp > CMakeFiles/Process.dir/Process.i
 
 CMakeFiles/Process.dir/Process.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Process.dir/Process.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/OpenCV/cmake_test/Process.cpp -o CMakeFiles/Process.dir/Process.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/OpenCV/RaspberryPI_OpenCV/Process.cpp -o CMakeFiles/Process.dir/Process.s
 
 CMakeFiles/Process.dir/Process.o.requires:
 
@@ -91,7 +91,7 @@ Process_EXTERNAL_OBJECTS =
 libProcess.a: CMakeFiles/Process.dir/Process.o
 libProcess.a: CMakeFiles/Process.dir/build.make
 libProcess.a: CMakeFiles/Process.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libProcess.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libProcess.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Process.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Process.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/Process.dir/clean:
 .PHONY : CMakeFiles/Process.dir/clean
 
 CMakeFiles/Process.dir/depend:
-	cd /home/pi/OpenCV/cmake_test/build_pi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/OpenCV/cmake_test /home/pi/OpenCV/cmake_test /home/pi/OpenCV/cmake_test/build_pi /home/pi/OpenCV/cmake_test/build_pi /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/Process.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/OpenCV/RaspberryPI_OpenCV /home/pi/OpenCV/RaspberryPI_OpenCV /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/Process.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Process.dir/depend
 

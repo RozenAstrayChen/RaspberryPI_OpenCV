@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/OpenCV/cmake_test/Control.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/Process.hpp
 stdio.h
 -
+trackFilteredObject.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/trackFilteredObject.hpp
+Serial.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/Serial.hpp
 string
 -
 iostream
@@ -17,40 +21,26 @@ termios.h
 -
 unistd.h
 -
-Serial.hpp
-/home/pi/OpenCV/cmake_test/Serial.hpp
 cstring
 -
 
-/home/pi/OpenCV/cmake_test/Process.hpp
-stdio.h
--
-thread
--
-future
--
-Control.hpp
-/home/pi/OpenCV/cmake_test/Control.hpp
-trackFilteredObject.hpp
-/home/pi/OpenCV/cmake_test/trackFilteredObject.hpp
-
-/home/pi/OpenCV/cmake_test/Serial.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/Serial.hpp
 stdio.h
 -
 string
 -
 
-/home/pi/OpenCV/cmake_test/image_add.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/image_add.hpp
 stdio.h
 -
 opencv2/core/core.hpp
-/home/pi/OpenCV/cmake_test/opencv2/core/core.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/opencv2/core/core.hpp
 opencv2/highgui/highgui.hpp
-/home/pi/OpenCV/cmake_test/opencv2/highgui/highgui.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
-/home/pi/OpenCV/cmake_test/opencv2/imgproc/imgproc.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/opencv2/imgproc/imgproc.hpp
 
-/home/pi/OpenCV/cmake_test/image_track.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/image_track.hpp
 iostream
 -
 string
@@ -62,7 +52,7 @@ iostream
 opencv2/opencv.hpp
 -
 
-/home/pi/OpenCV/cmake_test/image_track_pi.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/image_track_pi.hpp
 stdio.h
 -
 raspicam/raspicam_cv.h
@@ -72,25 +62,25 @@ iostream
 opencv2/opencv.hpp
 -
 
-/home/pi/OpenCV/cmake_test/main.cpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/main.cpp
 iostream
 -
 image_add.hpp
-/home/pi/OpenCV/cmake_test/image_add.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/image_add.hpp
 opencv2/opencv.hpp
 -
 thread
 -
 Process.hpp
-/home/pi/OpenCV/cmake_test/Process.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/Process.hpp
 raspicam/raspicam_cv.h
 -
 image_track_pi.hpp
-/home/pi/OpenCV/cmake_test/image_track_pi.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/image_track_pi.hpp
 image_track.hpp
-/home/pi/OpenCV/cmake_test/image_track.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/image_track.hpp
 
-/home/pi/OpenCV/cmake_test/trackFilteredObject.hpp
+/home/pi/OpenCV/RaspberryPI_OpenCV/trackFilteredObject.hpp
 stdio.h
 -
 iostream

@@ -54,47 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/OpenCV/cmake_test
+CMAKE_SOURCE_DIR = /home/pi/OpenCV/RaspberryPI_OpenCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/OpenCV/cmake_test/build_pi
-
-#=============================================================================
-# Target rules for target CMakeFiles/Process.dir
-
-# All Build rule for target.
-CMakeFiles/Process.dir/all:
-	$(MAKE) -f CMakeFiles/Process.dir/build.make CMakeFiles/Process.dir/depend
-	$(MAKE) -f CMakeFiles/Process.dir/build.make CMakeFiles/Process.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=3,4 "Built target Process"
-.PHONY : CMakeFiles/Process.dir/all
-
-# Include target in all.
-all: CMakeFiles/Process.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Process.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Process.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 0
-.PHONY : CMakeFiles/Process.dir/rule
-
-# Convenience name for target.
-Process: CMakeFiles/Process.dir/rule
-
-.PHONY : Process
-
-# clean rule for target.
-CMakeFiles/Process.dir/clean:
-	$(MAKE) -f CMakeFiles/Process.dir/build.make CMakeFiles/Process.dir/clean
-.PHONY : CMakeFiles/Process.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/Process.dir/clean
-
-.PHONY : clean
+CMAKE_BINARY_DIR = /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi
 
 #=============================================================================
 # Target rules for target CMakeFiles/image_track_pi.dir
@@ -103,7 +66,7 @@ clean: CMakeFiles/Process.dir/clean
 CMakeFiles/image_track_pi.dir/all:
 	$(MAKE) -f CMakeFiles/image_track_pi.dir/build.make CMakeFiles/image_track_pi.dir/depend
 	$(MAKE) -f CMakeFiles/image_track_pi.dir/build.make CMakeFiles/image_track_pi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=11,12 "Built target image_track_pi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=9,10 "Built target image_track_pi"
 .PHONY : CMakeFiles/image_track_pi.dir/all
 
 # Include target in all.
@@ -113,9 +76,9 @@ all: CMakeFiles/image_track_pi.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/image_track_pi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/image_track_pi.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 0
 .PHONY : CMakeFiles/image_track_pi.dir/rule
 
 # Convenience name for target.
@@ -134,39 +97,39 @@ clean: CMakeFiles/image_track_pi.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Control.dir
+# Target rules for target CMakeFiles/Process.dir
 
 # All Build rule for target.
-CMakeFiles/Control.dir/all:
-	$(MAKE) -f CMakeFiles/Control.dir/build.make CMakeFiles/Control.dir/depend
-	$(MAKE) -f CMakeFiles/Control.dir/build.make CMakeFiles/Control.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=1,2 "Built target Control"
-.PHONY : CMakeFiles/Control.dir/all
+CMakeFiles/Process.dir/all:
+	$(MAKE) -f CMakeFiles/Process.dir/build.make CMakeFiles/Process.dir/depend
+	$(MAKE) -f CMakeFiles/Process.dir/build.make CMakeFiles/Process.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=1,2 "Built target Process"
+.PHONY : CMakeFiles/Process.dir/all
 
 # Include target in all.
-all: CMakeFiles/Control.dir/all
+all: CMakeFiles/Process.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Control.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Control.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 0
-.PHONY : CMakeFiles/Control.dir/rule
+CMakeFiles/Process.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Process.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 0
+.PHONY : CMakeFiles/Process.dir/rule
 
 # Convenience name for target.
-Control: CMakeFiles/Control.dir/rule
+Process: CMakeFiles/Process.dir/rule
 
-.PHONY : Control
-
-# clean rule for target.
-CMakeFiles/Control.dir/clean:
-	$(MAKE) -f CMakeFiles/Control.dir/build.make CMakeFiles/Control.dir/clean
-.PHONY : CMakeFiles/Control.dir/clean
+.PHONY : Process
 
 # clean rule for target.
-clean: CMakeFiles/Control.dir/clean
+CMakeFiles/Process.dir/clean:
+	$(MAKE) -f CMakeFiles/Process.dir/build.make CMakeFiles/Process.dir/clean
+.PHONY : CMakeFiles/Process.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Process.dir/clean
 
 .PHONY : clean
 
@@ -177,7 +140,7 @@ clean: CMakeFiles/Control.dir/clean
 CMakeFiles/Serial.dir/all:
 	$(MAKE) -f CMakeFiles/Serial.dir/build.make CMakeFiles/Serial.dir/depend
 	$(MAKE) -f CMakeFiles/Serial.dir/build.make CMakeFiles/Serial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=5,6 "Built target Serial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=3,4 "Built target Serial"
 .PHONY : CMakeFiles/Serial.dir/all
 
 # Include target in all.
@@ -187,9 +150,9 @@ all: CMakeFiles/Serial.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Serial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Serial.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 0
 .PHONY : CMakeFiles/Serial.dir/rule
 
 # Convenience name for target.
@@ -214,7 +177,7 @@ clean: CMakeFiles/Serial.dir/clean
 CMakeFiles/trackFilteredObject.dir/all:
 	$(MAKE) -f CMakeFiles/trackFilteredObject.dir/build.make CMakeFiles/trackFilteredObject.dir/depend
 	$(MAKE) -f CMakeFiles/trackFilteredObject.dir/build.make CMakeFiles/trackFilteredObject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=15,16 "Built target trackFilteredObject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=13,14 "Built target trackFilteredObject"
 .PHONY : CMakeFiles/trackFilteredObject.dir/all
 
 # Include target in all.
@@ -224,9 +187,9 @@ all: CMakeFiles/trackFilteredObject.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/trackFilteredObject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/trackFilteredObject.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 0
 .PHONY : CMakeFiles/trackFilteredObject.dir/rule
 
 # Convenience name for target.
@@ -251,7 +214,7 @@ clean: CMakeFiles/trackFilteredObject.dir/clean
 CMakeFiles/image_add.dir/all:
 	$(MAKE) -f CMakeFiles/image_add.dir/build.make CMakeFiles/image_add.dir/depend
 	$(MAKE) -f CMakeFiles/image_add.dir/build.make CMakeFiles/image_add.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=7,8 "Built target image_add"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=5,6 "Built target image_add"
 .PHONY : CMakeFiles/image_add.dir/all
 
 # Include target in all.
@@ -261,9 +224,9 @@ all: CMakeFiles/image_add.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/image_add.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/image_add.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 0
 .PHONY : CMakeFiles/image_add.dir/rule
 
 # Convenience name for target.
@@ -288,7 +251,7 @@ clean: CMakeFiles/image_add.dir/clean
 CMakeFiles/image_track.dir/all:
 	$(MAKE) -f CMakeFiles/image_track.dir/build.make CMakeFiles/image_track.dir/depend
 	$(MAKE) -f CMakeFiles/image_track.dir/build.make CMakeFiles/image_track.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=9,10 "Built target image_track"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=7,8 "Built target image_track"
 .PHONY : CMakeFiles/image_track.dir/all
 
 # Include target in all.
@@ -298,9 +261,9 @@ all: CMakeFiles/image_track.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/image_track.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/image_track.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 0
 .PHONY : CMakeFiles/image_track.dir/rule
 
 # Convenience name for target.
@@ -322,16 +285,15 @@ clean: CMakeFiles/image_track.dir/clean
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all: CMakeFiles/Serial.dir/all
 CMakeFiles/main.dir/all: CMakeFiles/trackFilteredObject.dir/all
 CMakeFiles/main.dir/all: CMakeFiles/image_add.dir/all
 CMakeFiles/main.dir/all: CMakeFiles/image_track.dir/all
-CMakeFiles/main.dir/all: CMakeFiles/Process.dir/all
 CMakeFiles/main.dir/all: CMakeFiles/image_track_pi.dir/all
-CMakeFiles/main.dir/all: CMakeFiles/Control.dir/all
+CMakeFiles/main.dir/all: CMakeFiles/Process.dir/all
+CMakeFiles/main.dir/all: CMakeFiles/Serial.dir/all
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/cmake_test/build_pi/CMakeFiles --progress-num=13,14 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles --progress-num=11,12 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Include target in all.
@@ -341,9 +303,9 @@ all: CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
 
 # Convenience name for target.

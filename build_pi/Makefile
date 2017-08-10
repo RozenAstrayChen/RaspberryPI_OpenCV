@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/OpenCV/cmake_test
+CMAKE_SOURCE_DIR = /home/pi/OpenCV/RaspberryPI_OpenCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/OpenCV/cmake_test/build_pi
+CMAKE_BINARY_DIR = /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/cmake_test/build_pi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Process
-
-# Build rule for target.
-Process: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Process
-.PHONY : Process
-
-# fast build rule for target.
-Process/fast:
-	$(MAKE) -f CMakeFiles/Process.dir/build.make CMakeFiles/Process.dir/build
-.PHONY : Process/fast
-
-#=============================================================================
 # Target rules for targets named image_track_pi
 
 # Build rule for target.
@@ -137,17 +124,17 @@ image_track_pi/fast:
 .PHONY : image_track_pi/fast
 
 #=============================================================================
-# Target rules for targets named Control
+# Target rules for targets named Process
 
 # Build rule for target.
-Control: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Control
-.PHONY : Control
+Process: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Process
+.PHONY : Process
 
 # fast build rule for target.
-Control/fast:
-	$(MAKE) -f CMakeFiles/Control.dir/build.make CMakeFiles/Control.dir/build
-.PHONY : Control/fast
+Process/fast:
+	$(MAKE) -f CMakeFiles/Process.dir/build.make CMakeFiles/Process.dir/build
+.PHONY : Process/fast
 
 #=============================================================================
 # Target rules for targets named Serial
@@ -213,21 +200,6 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
-
-# target to build an object file
-Control.o:
-	$(MAKE) -f CMakeFiles/Control.dir/build.make CMakeFiles/Control.dir/Control.o
-.PHONY : Control.o
-
-# target to preprocess a source file
-Control.i:
-	$(MAKE) -f CMakeFiles/Control.dir/build.make CMakeFiles/Control.dir/Control.i
-.PHONY : Control.i
-
-# target to generate assembly for a file
-Control.s:
-	$(MAKE) -f CMakeFiles/Control.dir/build.make CMakeFiles/Control.dir/Control.s
-.PHONY : Control.s
 
 # target to build an object file
 Process.o:
@@ -340,9 +312,8 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... Process"
 	@echo "... image_track_pi"
-	@echo "... Control"
+	@echo "... Process"
 	@echo "... edit_cache"
 	@echo "... Serial"
 	@echo "... trackFilteredObject"
@@ -350,9 +321,6 @@ help:
 	@echo "... image_add"
 	@echo "... image_track"
 	@echo "... main"
-	@echo "... Control.o"
-	@echo "... Control.i"
-	@echo "... Control.s"
 	@echo "... Process.o"
 	@echo "... Process.i"
 	@echo "... Process.s"
