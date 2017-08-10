@@ -18,18 +18,16 @@
 
 //class Process:public trackFiliteredObject,public Control;
 
-class Process: public trackFiliteredObject{
+class Process: public trackFiliteredObject,public Control{
 public:
 #ifdef __APPLE__
     
-    //Process(string deviceName, int baud ,VideoCapture& video_temp):Control(deviceName,baud){
-    //    this->video = video;
-    //}
-    Process(string deviceName, int baud ,VideoCapture& video){
+    Process(string deviceName, int baud ,VideoCapture& video_temp):Control(deviceName,baud){
         this->video = video;
     }
-    
-    
+    //Process(string deviceName, int baud ,VideoCapture& video){
+       // this->video = video;
+    //}
     
     
 #elif  __unix
@@ -46,6 +44,11 @@ public:
     void trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFeed) override;
     void CalculateDirection();
     void CalculateDistance();
+    void Control_left(int value) override;
+    void Control_right(int value) override;
+    void Control_ahead(int value) override;
+    void Control_Back(int value) override;
+    void Control_Turn_back(int value) override;
 private:
     /*
      * left 0~399

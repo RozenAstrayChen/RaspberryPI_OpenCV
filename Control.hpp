@@ -25,11 +25,11 @@ public:
         
     }
     void test_direction();
-    void Control_left(int value);
-    void Control_right(int value);
-    void Control_ahead(int value);
-    void Control_Back(int value);
-    void Control_Turn_back(int value);
+    void virtual Control_left(int value);
+    void virtual Control_right(int value);
+    void virtual Control_ahead(int value);
+    void virtual Control_Back(int value);
+    void virtual Control_Turn_back(int value);
     string byte2_4byte(int value);
     /*input one char without "\n"*/
     int getch(void);

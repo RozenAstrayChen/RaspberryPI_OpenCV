@@ -9,6 +9,27 @@
 #include "Process.hpp"
 
 using namespace std;
+void Control::Control_left(int value){
+    byte2_4byte(value);
+    Send(value);
+}
+void Control::Control_right(int value){
+    byte2_4byte(value);
+    Send(value);
+}
+void Control::Control_ahead(int value){
+    byte2_4byte(value);
+    Send(value);
+}
+void Control::Control_Back(int value){
+    byte2_4byte(value);
+    Send(value);
+}
+void Control::Control_Turn_back(int value){
+    byte2_4byte(value);
+    Send(value);
+}
+
 /*Override test_hsv function,in order to use rs232  translation*/
 
 void Process::Proecess_track(){
