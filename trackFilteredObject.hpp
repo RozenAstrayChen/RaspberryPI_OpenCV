@@ -31,24 +31,30 @@ static cv::Mat image_frame;
 
 class trackFiliteredObject{
 public:
-    trackFiliteredObject();
+    
     #ifdef __unix
-        void test_hsv(raspicam::RaspiCam_Cv video);
+        virtual void test_hsv(raspicam::RaspiCam_Cv video);
     #elif __APPLE__
-        void test_hsv(cv::VideoCapture video);
+        virtual void test_hsv(cv::VideoCapture video);
     #else
     
     #endif
     
     void createTrackbars(void);
     void morphOps(cv::Mat &thresh);
-    void trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFeed);
-    
-private:
-    
+    virtual void trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFeed);
+    void writeXY(int x,int y);
+    void writeRange(int Range);
+    int getX(void);
+    int getY(void);
+    int getRange(void);
     void drawObject(int x, int y,Mat &frame);
     string intToString(int number);
     void Multiple_inRanage(Mat &hsv,Mat &threshold,int arguments);
+    
+protected:
+    
+    
     //initial min and max HSV filter values.
     //these will be changed using trackbars
     int H_MIN = 0;
@@ -57,20 +63,25 @@ private:
     int S_MAX = 256;
     int V_MIN = 0;
     int V_MAX = 256;
-    enum hsv_arguments{default_value,morring,noon,night,night2};
+    enum hsv_arguments{default_value,morring,morring_pi,noon,night,night2};
     //x and y values for the location of the object
     int x=0, y=0;
+    //Range is judgement distance
+    int Range=0;
     //default capture width and height
-    const int FRAME_WIDTH = 640;
-    const int FRAME_HEIGHT = 480;
+    const int FRAME_WIDTH = 100;
+    const int FRAME_HEIGHT = 100;
     //max number of objects to be detected in frame
     const int MAX_NUM_OBJECTS=50;
     //minimum and maximum object area
     const int MIN_OBJECT_AREA = 20*20;
     const int MAX_OBJECT_AREA = FRAME_HEIGHT*FRAME_WIDTH/1.5;
+    //judgement will too close or too far
+    
     //flag
     bool useMorphOps = true;
     bool track = true;
+    
     
     //names that will appear at the top of each window
     const string windowName = "Original Image";
@@ -79,4 +90,6 @@ private:
     const string windowName3 = "After Morphological Operations";
     const string trackbarWindowName = "Trackbars";
     cv::Mat frame,hsv,threshold,cameraFeed;
+private:
+    
 };

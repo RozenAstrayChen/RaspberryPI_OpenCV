@@ -1,13 +1,40 @@
 dependencies: \
   /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.cpp \
   /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.hpp \
-  /usr/local/include/opencv2/core/core.hpp \
-  /usr/local/include/opencv2/core/types_c.h \
-  /usr/local/include/opencv2/core/version.hpp \
-  /usr/local/include/opencv2/core/operations.hpp \
-  /usr/local/include/opencv2/core/mat.hpp \
-  /usr/local/include/opencv2/highgui/highgui.hpp \
-  /usr/local/include/opencv2/highgui/highgui_c.h \
-  /usr/local/include/opencv2/core/core_c.h \
-  /usr/local/include/opencv2/imgproc/imgproc.hpp \
-  /usr/local/include/opencv2/imgproc/types_c.h
+  /opt/local/include/opencv2/core/core.hpp \
+  /opt/local/include/opencv2/core.hpp \
+  /opt/local/include/opencv2/core/cvdef.h \
+  /opt/local/include/opencv2/core/hal/interface.h \
+  /opt/local/include/opencv2/core/version.hpp \
+  /opt/local/include/opencv2/core/base.hpp \
+  /opt/local/include/opencv2/opencv_modules.hpp \
+  /opt/local/include/opencv2/core/cvstd.hpp \
+  /opt/local/include/opencv2/core/ptr.inl.hpp \
+  /opt/local/include/opencv2/core/neon_utils.hpp \
+  /opt/local/include/opencv2/core/traits.hpp \
+  /opt/local/include/opencv2/core/matx.hpp \
+  /opt/local/include/opencv2/core/saturate.hpp \
+  /opt/local/include/opencv2/core/fast_math.hpp \
+  /opt/local/include/opencv2/core/types.hpp \
+  /opt/local/include/opencv2/core/mat.hpp \
+  /opt/local/include/opencv2/core/bufferpool.hpp \
+  /opt/local/include/opencv2/core/mat.inl.hpp \
+  /opt/local/include/opencv2/core/persistence.hpp \
+  /opt/local/include/opencv2/core/operations.hpp \
+  /opt/local/include/opencv2/core/cvstd.inl.hpp \
+  /opt/local/include/opencv2/core/utility.hpp \
+  /opt/local/include/opencv2/core/core_c.h \
+  /opt/local/include/opencv2/core/types_c.h \
+  /opt/local/include/opencv2/core/optim.hpp \
+  /opt/local/include/opencv2/core/ovx.hpp \
+  /opt/local/include/opencv2/highgui/highgui.hpp \
+  /opt/local/include/opencv2/highgui.hpp \
+  /opt/local/include/opencv2/imgcodecs.hpp \
+  /opt/local/include/opencv2/videoio.hpp \
+  /opt/local/include/opencv2/highgui/highgui_c.h \
+  /opt/local/include/opencv2/imgproc/imgproc_c.h \
+  /opt/local/include/opencv2/imgproc/types_c.h \
+  /opt/local/include/opencv2/imgcodecs/imgcodecs_c.h \
+  /opt/local/include/opencv2/videoio/videoio_c.h \
+  /opt/local/include/opencv2/imgproc/imgproc.hpp \
+  /opt/local/include/opencv2/imgproc.hpp

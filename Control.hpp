@@ -10,5 +10,35 @@
 #define Control_hpp
 
 #include <stdio.h>
+#include <string>
+#include <iostream>
+#include <termios.h>  // for tcxxxattr, ECHO, etc ..
+#include <unistd.h>   // for STDIN_FILENO
+#include "Serial.hpp"
+#ifdef __unix
+#include <cstring>
+#endif
+
+class Control :public mySerial{
+public:
+    Control(string deviceName, int baud):mySerial(deviceName,baud){
+        
+    }
+    void test_direction();
+    void Control_left(double value);
+    void Control_right(double value);
+    void Control_ahead(double value);
+    void Control_Back(double value);
+    void Control_Turn_back(double value);
+    string byte2_4byte(double value);
+    /*input one char without "\n"*/
+    int getch(void);
+private:
+    double left = 500;
+    double right = 2500;
+    double mid = 1500; 
+    
+    
+};
 
 #endif /* Control_hpp */

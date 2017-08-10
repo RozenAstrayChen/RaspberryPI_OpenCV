@@ -9,80 +9,90 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Serial.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
-		<key>ZERO_CHECK.xcscheme</key>
+		<key>Control.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>image_add.xcscheme</key>
+		<key>Process.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>image_track.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>main.xcscheme</key>
+		<key>Serial.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>serial.xcscheme</key>
+		<key>ZERO_CHECK.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>4</integer>
 		</dict>
-		<key>trackFilteredObject.xcscheme</key>
+		<key>image_add.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>image_track.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>main.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>trackFilteredObject.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0700D1EB21834682B380AC05</key>
+		<key>1717815D6FBB4CF39CA304DA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>208B50D61AB74DDDB07219B7</key>
+		<key>49DBA76A54914B0BA75257EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>46A2153FA7AE4F58AC53EEE1</key>
+		<key>5B272F6DAC784339BC9AA11C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>957953CD783849599F446015</key>
+		<key>5F1EB75C6F134D3D825DB90A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9CE81928471841C282DC0431</key>
+		<key>6C9F65B8FE5B439D8F96BFEB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A0579F1ACE8349C2B0867459</key>
+		<key>8E842086F4624E328016AA24</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ABA6EA4A48CA47FD836097ED</key>
+		<key>D6F99FCE77514B39961C32F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D5B2325B407040408443A7B9</key>
+		<key>E12490C945BB4A14965677A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F22E60D171E2453783BFA1E3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

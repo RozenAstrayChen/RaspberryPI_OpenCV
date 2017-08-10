@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimage_track_pi.a  CMakeFiles/image_track_pi.dir/image_track_pi.o
+/usr/bin/ranlib libimage_track_pi.a

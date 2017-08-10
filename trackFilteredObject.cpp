@@ -31,9 +31,7 @@ void static on_trackbar( int, void* ){
     //This function gets called whenever a
     // trackbar position is changed
 }
-trackFiliteredObject::trackFiliteredObject(){
-    
-}
+
 
 string trackFiliteredObject::intToString(int number){
     
@@ -42,19 +40,44 @@ string trackFiliteredObject::intToString(int number){
     ss << number;
     return ss.str();
 }
+void trackFiliteredObject::writeXY(int x, int y){
+    this->x = x;
+    this->y = y;
+}
+void trackFiliteredObject::writeRange(int Range){
+    this->Range = Range;
+}
+int trackFiliteredObject::getX(){return this->x;}
+int trackFiliteredObject::getY(){return this->y;}
+int trackFiliteredObject::getRange(){return this->Range;}
+
 void trackFiliteredObject::Multiple_inRanage(Mat &hsv,Mat &threshold,int arguments){
     
     switch (arguments) {
         case default_value:
-            cv::inRange(hsv,Scalar(H_MIN,S_MIN,V_MIN),Scalar(H_MAX,S_MAX,V_MAX), threshold);
+            H_MIN = 0;H_MAX=256;
+            S_MIN=0;S_MAX=256;
+            V_MIN=0;V_MAX=256;
+            //cv::inRange(hsv,Scalar(H_MIN,S_MIN,V_MIN),Scalar(H_MAX,S_MAX,V_MAX), threshold);
             break;
         case morring:
-            cv::inRange(hsv, Scalar(17,150,36), Scalar(256,256,170), threshold);
+            H_MIN = 17;H_MAX=256;
+            S_MIN=150;S_MAX=256;
+            V_MIN=36;V_MAX=170;
+            //cv::inRange(hsv, Scalar(17,150,36), Scalar(256,256,170), threshold);
             break;
+	case morring_pi:
+	    H_MIN = 26;H_MAX=256;
+            S_MIN=158;S_MAX=256;
+            V_MIN=31;V_MAX=249;
+	    break;
         case noon:
             break;
         case night:
-            cv::inRange(hsv, Scalar(24,84,113), Scalar(80,256,240), threshold);
+            H_MIN =24;H_MAX=80;
+            S_MIN=84;S_MAX=256;
+            V_MIN=113;V_MAX=240;
+            //cv::inRange(hsv, Scalar(24,84,113), Scalar(80,256,240), threshold);
             break;
         case night2:
             break;
@@ -117,8 +140,13 @@ void trackFiliteredObject::trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFe
                 if(area>MIN_OBJECT_AREA && area<MAX_OBJECT_AREA && area>refArea){
                     x = moment.m10/area;
                     y = moment.m01/area;
+                    
                     objectFound = true;
                     refArea = area;
+                }else if(area> MAX_OBJECT_AREA){
+                    putText(cameraFeed,"Tracking TOO CLOSE!",Point(0,50),2,1,Scalar(0,0,255),2);
+                    cout << "TOO CLOSE" << endl;
+                    objectFound = false;
                 }else objectFound = false;
                 
                 
@@ -126,6 +154,9 @@ void trackFiliteredObject::trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFe
             //let user know you found an object
             if(objectFound ==true){
                 putText(cameraFeed,"Tracking Object",Point(0,50),2,1,Scalar(0,255,0),2);
+                //write x,y in object
+                writeXY(x, y);
+                
                 //draw object location on screen
                 drawObject(x,y,cameraFeed);}
             
@@ -175,7 +206,7 @@ void trackFiliteredObject::morphOps(cv::Mat &thresh){
 #ifdef __unix
 /*in order to read H,S,V value*/
 void trackFiliteredObject::test_hsv(raspicam::RaspiCam_Cv video){
-    cv::namedWindow("image");
+    //cv::namedWindow("image");
     cv::namedWindow("testing on HSV");
     cv::namedWindow("camerafeed");
     
@@ -187,10 +218,9 @@ void trackFiliteredObject::test_hsv(raspicam::RaspiCam_Cv video){
         frame.copyTo(image_frame);
         cv::cvtColor(image_frame, hsv, cv::COLOR_BGR2HSV);
         
-        Multiple_inRanage(hsv, threshold, night);
-        //cv::inRange(hsv,Scalar(H_MIN,S_MIN,V_MIN),Scalar(H_MAX,S_MAX,V_MAX), threshold);
-        //cv::inRange(hsv, Scalar(17,150,36), Scalar(256,256,170), threshold);
-        //cv::inRange(hsv, Scalar(94,93,34), Scalar(103,256,168), threshold);
+        Multiple_inRanage(hsv, threshold, morring_pi);
+        cv::inRange(hsv,Scalar(H_MIN,S_MIN,V_MIN),Scalar(H_MAX,S_MAX,V_MAX), threshold);
+        
         
         if(useMorphOps)morphOps(threshold);
         
@@ -223,9 +253,8 @@ void trackFiliteredObject::test_hsv(cv::VideoCapture video){
         cv::cvtColor(image_frame, hsv, cv::COLOR_BGR2HSV);
         
         Multiple_inRanage(hsv, threshold, night);
-        //cv::inRange(hsv,Scalar(H_MIN,S_MIN,V_MIN),Scalar(H_MAX,S_MAX,V_MAX), threshold);
-        //cv::inRange(hsv, Scalar(17,150,36), Scalar(256,256,170), threshold);
-        //cv::inRange(hsv, Scalar(94,93,34), Scalar(103,256,168), threshold);
+        cv::inRange(hsv,Scalar(H_MIN,S_MIN,V_MIN),Scalar(H_MAX,S_MAX,V_MAX), threshold);
+        
         
         if(useMorphOps)morphOps(threshold);
         

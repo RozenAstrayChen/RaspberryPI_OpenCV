@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/OpenCV/cmake_test/Control.cpp
+Control.hpp
+/home/pi/OpenCV/cmake_test/Control.hpp
+
+/home/pi/OpenCV/cmake_test/Control.hpp
+stdio.h
+-
+string
+-
+iostream
+-
+termios.h
+-
+unistd.h
+-
+Serial.hpp
+/home/pi/OpenCV/cmake_test/Serial.hpp
+cstring
+-
+
+/home/pi/OpenCV/cmake_test/Serial.hpp
+stdio.h
+-
+string
+-
+

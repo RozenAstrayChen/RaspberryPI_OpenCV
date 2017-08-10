@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/OpenCV/cmake_test/image_track.cpp
+image_track.hpp
+/home/pi/OpenCV/cmake_test/image_track.hpp
+
+/home/pi/OpenCV/cmake_test/image_track.hpp
+iostream
+-
+string
+-
+stdio.h
+-
+iostream
+-
+opencv2/opencv.hpp
+-
+

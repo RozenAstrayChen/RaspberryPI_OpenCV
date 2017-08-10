@@ -16,7 +16,9 @@ class mySerial{
 public:
     int handle,baud;
     string deviceName;
+    //Constructor
     mySerial(std::string deviceName, int baud);
+    //Destructor
     ~mySerial();
     
     bool Send( unsigned char  * data,int len);

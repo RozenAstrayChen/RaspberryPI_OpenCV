@@ -1,16 +1,22 @@
 #include <iostream>
 
 #include "image_add.hpp"
-#include "trackFilteredObject.hpp"
 #include <opencv2/opencv.hpp>
+#include <thread>
+#include "Process.hpp"
+//#include "trackFiliteredObject.hpp"
+
 #ifdef __unix
     //raspberry
     #include <raspicam/raspicam_cv.h>
     #include "image_track_pi.hpp"
-    #include "Serial.hpp"
+    using namespace raspicam;
+
+
 #elif __APPLE__
 
     #include "image_track.hpp"
+
 #else
 
 #endif
@@ -20,9 +26,9 @@ using namespace std;
 String path_mac = "/Users/Rozen_mac/code/opencv/photo/";
 String path_pi = "/home/pi/openCV/";
 
-void StartImageTrack(){
-    
-}
+
+
+
 
 int main(int argc, char *argv[])
 {
@@ -36,36 +42,28 @@ int main(int argc, char *argv[])
     #endif
     
     #elif __APPLE__
-        //image_track track_obj;
-        trackFiliteredObject track;
-        VideoCapture video(0);
-        track.createTrackbars();
-        track.test_hsv(video);
-        //track_obj.track_start(video);
-    
-        video.release();
+    VideoCapture video(0);
+    Process process("/dev/ttyUSB0",115200,video);
+    process.Proecess_track();
+    video.release();
     #elif __unix
-        printf("UNIX\n");
-        
-        //image_track_pi track_obj;
-        //trackFiliteredObject track;
-        //RaspiCam_Cv video;
-        //if(!video.open()){cerr << "ERROR opening the camera" <<endl;return -1;}
-        //track_obj.track_start(video);
-        //track.test_hsv(video);
-        //video.release();
+    printf("UNIX\n");
+    RaspiCam_Cv video ;
+    //Process process("/dev/ttyUSB0",115200,video);
+    if(!video.open()){cerr << "Error opening the camera"<<endl;return -1;}
     
-        /*tesing in serial*/
-        mySerial serial("/dev/ttyUSB0",115200);
+    //process.Proecess_track();
+
+    trackFiliteredObject track;
+    track.createTrackbars();
+    track.test_hsv(video);
+    video.release();
     
-        // One Byte At the time
-        serial.Send(128);
-        serial.Send(132);
-        //close
-        serial.Close();
+    //process.Send("fuck you");
+    
     
         // and so on
-        #elif __linux
+    #elif __linux
         printf("Linux");
     #else
     

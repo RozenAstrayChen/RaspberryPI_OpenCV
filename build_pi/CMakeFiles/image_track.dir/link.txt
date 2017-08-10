@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimage_track.a  CMakeFiles/image_track.dir/image_track.o
+/usr/bin/ranlib libimage_track.a

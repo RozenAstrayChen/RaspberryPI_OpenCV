@@ -21,10 +21,6 @@ CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDef
 // syntax should this version of CMake try to support.
 CMAKE_BACKWARDS_COMPATIBILITY:STRING=2.4
 
-//Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
-// CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
-CMAKE_BUILD_TYPE:STRING=
-
 //Semicolon separated list of supported configuration types, only
 // supports Debug, Release, MinSizeRel, and RelWithDebInfo, anything
 // else will be ignored.
@@ -173,28 +169,20 @@ CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/Xcode
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Dependencies for target
+Control_LIB_DEPENDS:STATIC=
+
 //Single output directory for building all executables.
 EXECUTABLE_OUTPUT_PATH:PATH=
 
 //Single output directory for building all libraries.
 LIBRARY_OUTPUT_PATH:PATH=
 
-//Path where debug 3rdpaty OpenCV dependencies are located
-OpenCV_3RDPARTY_LIB_DIR_DBG:PATH=
-
-//Path where release 3rdpaty OpenCV dependencies are located
-OpenCV_3RDPARTY_LIB_DIR_OPT:PATH=
-
-OpenCV_CONFIG_PATH:FILEPATH=/usr/local/share/OpenCV
-
 //The directory containing a CMake configuration file for OpenCV.
-OpenCV_DIR:PATH=/usr/local/share/OpenCV
+OpenCV_DIR:PATH=/opt/local/share/OpenCV
 
-//Path where debug OpenCV libraries are located
-OpenCV_LIB_DIR_DBG:PATH=
-
-//Path where release OpenCV libraries are located
-OpenCV_LIB_DIR_OPT:PATH=
+//Dependencies for target
+Process_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 Serial_LIB_DEPENDS:STATIC=
@@ -212,12 +200,6 @@ main_BINARY_DIR:STATIC=/Users/Rozen_mac/code/opencv/project/cmake_test/build_mac
 main_SOURCE_DIR:STATIC=/Users/Rozen_mac/code/opencv/project/cmake_test
 
 //Dependencies for target
-mylib_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
-serial_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
 trackFilteredObject_LIB_DEPENDS:STATIC=
 
 
@@ -226,7 +208,7 @@ trackFilteredObject_LIB_DEPENDS:STATIC=
 ########################
 
 //Stored Xcode object GUID
-ALL_BUILD_GUID_CMAKE:INTERNAL=9CE81928471841C282DC0431
+ALL_BUILD_GUID_CMAKE:INTERNAL=5B272F6DAC784339BC9AA11C
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -344,32 +326,24 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenCV_3RDPARTY_LIB_DIR_DBG
-OpenCV_3RDPARTY_LIB_DIR_DBG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenCV_3RDPARTY_LIB_DIR_OPT
-OpenCV_3RDPARTY_LIB_DIR_OPT-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenCV_CONFIG_PATH
-OpenCV_CONFIG_PATH-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenCV_LIB_DIR_DBG
-OpenCV_LIB_DIR_DBG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenCV_LIB_DIR_OPT
-OpenCV_LIB_DIR_OPT-ADVANCED:INTERNAL=1
 //Stored Xcode object GUID
-PROJECT_main_GUID_CMAKE:INTERNAL=903680E374594A1E8F566AC5
+Control_GUID_CMAKE:INTERNAL=D6F99FCE77514B39961C32F2
+//Details about finding OpenCV
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/opt/local][v3.2.0()]
 //Stored Xcode object GUID
-Serial_GUID_CMAKE:INTERNAL=0700D1EB21834682B380AC05
+PROJECT_main_GUID_CMAKE:INTERNAL=49079A34F54D4D47B188BE47
 //Stored Xcode object GUID
-ZERO_CHECK_GUID_CMAKE:INTERNAL=D5B2325B407040408443A7B9
+Process_GUID_CMAKE:INTERNAL=49DBA76A54914B0BA75257EA
 //Stored Xcode object GUID
-image_add_GUID_CMAKE:INTERNAL=46A2153FA7AE4F58AC53EEE1
+Serial_GUID_CMAKE:INTERNAL=6C9F65B8FE5B439D8F96BFEB
 //Stored Xcode object GUID
-image_track_GUID_CMAKE:INTERNAL=ABA6EA4A48CA47FD836097ED
+ZERO_CHECK_GUID_CMAKE:INTERNAL=1717815D6FBB4CF39CA304DA
 //Stored Xcode object GUID
-main_GUID_CMAKE:INTERNAL=208B50D61AB74DDDB07219B7
+image_add_GUID_CMAKE:INTERNAL=5F1EB75C6F134D3D825DB90A
 //Stored Xcode object GUID
-mylib_GUID_CMAKE:INTERNAL=9BEC4FB9E7D543FCAEED2565
+image_track_GUID_CMAKE:INTERNAL=E12490C945BB4A14965677A5
 //Stored Xcode object GUID
-serial_GUID_CMAKE:INTERNAL=A0579F1ACE8349C2B0867459
+main_GUID_CMAKE:INTERNAL=8E842086F4624E328016AA24
 //Stored Xcode object GUID
-trackFilteredObject_GUID_CMAKE:INTERNAL=957953CD783849599F446015
+trackFilteredObject_GUID_CMAKE:INTERNAL=F22E60D171E2453783BFA1E3
 

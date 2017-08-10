@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "957953CD783849599F446015"
+               BlueprintIdentifier = "F22E60D171E2453783BFA1E3"
                BuildableName = "libtrackFilteredObject.a"
                BlueprintName = "trackFilteredObject"
                ReferencedContainer = "container:build_mac/main.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "957953CD783849599F446015"
+            BlueprintIdentifier = "F22E60D171E2453783BFA1E3"
             BuildableName = "libtrackFilteredObject.a"
             BlueprintName = "trackFilteredObject"
             ReferencedContainer = "container:build_mac/main.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "957953CD783849599F446015"
+            BlueprintIdentifier = "F22E60D171E2453783BFA1E3"
             BuildableName = "libtrackFilteredObject.a"
             BlueprintName = "trackFilteredObject"
             ReferencedContainer = "container:build_mac/main.xcodeproj">
