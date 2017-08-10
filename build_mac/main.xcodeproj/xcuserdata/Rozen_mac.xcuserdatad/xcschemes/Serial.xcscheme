@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6C9F65B8FE5B439D8F96BFEB"
+               BlueprintIdentifier = "AECBA491792449EFBC891176"
                BuildableName = "libSerial.a"
                BlueprintName = "Serial"
                ReferencedContainer = "container:build_mac/main.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6C9F65B8FE5B439D8F96BFEB"
+            BlueprintIdentifier = "AECBA491792449EFBC891176"
             BuildableName = "libSerial.a"
             BlueprintName = "Serial"
             ReferencedContainer = "container:build_mac/main.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6C9F65B8FE5B439D8F96BFEB"
+            BlueprintIdentifier = "AECBA491792449EFBC891176"
             BuildableName = "libSerial.a"
             BlueprintName = "Serial"
             ReferencedContainer = "container:build_mac/main.xcodeproj">

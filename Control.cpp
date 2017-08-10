@@ -18,24 +18,29 @@ void Control::test_direction(){
     } while (input != 27);
     
 }
-void Control::Control_left(double value){
-    
+void Control::Control_left(int value){
+    byte2_4byte(value);
+    Send(value);
 }
-void Control::Control_right(double value){
-    
+void Control::Control_right(int value){
+    byte2_4byte(value);
+    Send(value);
 }
-void Control::Control_ahead(double value){
-    
+void Control::Control_ahead(int value){
+    byte2_4byte(value);
+    Send(value);
 }
-void Control::Control_Back(double value){
-    
+void Control::Control_Back(int value){
+    byte2_4byte(value);
+    Send(value);
 }
-void Control::Control_Turn_back(double value){
-    
+void Control::Control_Turn_back(int value){
+    byte2_4byte(value);
+    Send(value);
 }
-string Control::byte2_4byte(double value){
+string Control::byte2_4byte(int value){
     int value_int = (int)value;
-    char* temp;
+    char* temp = nullptr;
 
     string s = to_string(value_int);
     if(s.size()<=4){

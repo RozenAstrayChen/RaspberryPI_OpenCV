@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.cpp \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/image_track.hpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/image_track.cpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/image_track.hpp \
   /opt/local/include/opencv2/opencv.hpp \
   /opt/local/include/opencv2/opencv_modules.hpp \
   /opt/local/include/opencv2/core.hpp \

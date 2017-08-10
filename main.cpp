@@ -52,11 +52,12 @@ int main(int argc, char *argv[])
     //Process process("/dev/ttyUSB0",115200,video);
     if(!video.open()){cerr << "Error opening the camera"<<endl;return -1;}
     
-    //process.Proecess_track();
+    Process process("/dev/ttyUSB0",115200,video);
+    process.Proecess_track();
 
-    trackFiliteredObject track;
-    track.createTrackbars();
-    track.test_hsv(video);
+    //trackFiliteredObject track;
+    //track.createTrackbars();
+    //track.test_hsv(video);
     video.release();
     
     //process.Send("fuck you");

@@ -2,9 +2,9 @@
 # Custom rules for ALL_BUILD
 .SUFFIXES: 
 all: \
-	/Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/ALL_BUILD
+	/Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/ALL_BUILD
 
 
-/Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/ALL_BUILD: 
+/Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/ALL_BUILD: 
 	echo ""
 	echo Build\ all\ projects

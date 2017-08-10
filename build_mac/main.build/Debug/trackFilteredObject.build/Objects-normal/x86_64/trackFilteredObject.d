@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.cpp \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.hpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/trackFilteredObject.cpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/trackFilteredObject.hpp \
   /opt/local/include/opencv2/opencv.hpp \
   /opt/local/include/opencv2/opencv_modules.hpp \
   /opt/local/include/opencv2/core.hpp \

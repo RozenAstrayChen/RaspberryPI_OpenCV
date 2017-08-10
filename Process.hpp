@@ -18,7 +18,7 @@
 
 //class Process:public trackFiliteredObject,public Control;
 
-class Process: public trackFiliteredObject,public Control{
+class Process: public trackFiliteredObject{
 public:
 #ifdef __APPLE__
     
@@ -26,7 +26,7 @@ public:
     //    this->video = video;
     //}
     Process(string deviceName, int baud ,VideoCapture& video){
-            this->video = video;
+        this->video = video;
     }
     
     
@@ -47,6 +47,20 @@ public:
     void CalculateDirection();
     void CalculateDistance();
 private:
+    /*
+     * left 0~399
+     * middle 400~599
+     * right 600~1000
+     *
+     */
+    int Left_MIN = 0;
+    int Left_MAX = 400;
+    int middle = 1300;
+    int Right_MIN = 600;
+    int Right_MAX = 1000;
+    const string S_Left = "Left_turn";
+    const string S_Right = "Right_turn";
+    const string S_middle = "go foward";
 #ifdef __APPLE__
     VideoCapture video;
     

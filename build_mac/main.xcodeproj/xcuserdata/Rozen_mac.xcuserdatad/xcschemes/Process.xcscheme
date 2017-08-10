@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "49DBA76A54914B0BA75257EA"
+               BlueprintIdentifier = "AF509369DA844BCC897045F7"
                BuildableName = "libProcess.a"
                BlueprintName = "Process"
                ReferencedContainer = "container:build_mac/main.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "49DBA76A54914B0BA75257EA"
+            BlueprintIdentifier = "AF509369DA844BCC897045F7"
             BuildableName = "libProcess.a"
             BlueprintName = "Process"
             ReferencedContainer = "container:build_mac/main.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "49DBA76A54914B0BA75257EA"
+            BlueprintIdentifier = "AF509369DA844BCC897045F7"
             BuildableName = "libProcess.a"
             BlueprintName = "Process"
             ReferencedContainer = "container:build_mac/main.xcodeproj">

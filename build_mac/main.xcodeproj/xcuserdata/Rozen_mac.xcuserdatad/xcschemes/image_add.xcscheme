@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F1EB75C6F134D3D825DB90A"
+               BlueprintIdentifier = "4CEC2A5267C34A518A5159D0"
                BuildableName = "libimage_add.a"
                BlueprintName = "image_add"
                ReferencedContainer = "container:build_mac/main.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F1EB75C6F134D3D825DB90A"
+            BlueprintIdentifier = "4CEC2A5267C34A518A5159D0"
             BuildableName = "libimage_add.a"
             BlueprintName = "image_add"
             ReferencedContainer = "container:build_mac/main.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F1EB75C6F134D3D825DB90A"
+            BlueprintIdentifier = "4CEC2A5267C34A518A5159D0"
             BuildableName = "libimage_add.a"
             BlueprintName = "image_add"
             ReferencedContainer = "container:build_mac/main.xcodeproj">

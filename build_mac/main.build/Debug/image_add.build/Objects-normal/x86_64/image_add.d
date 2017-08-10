@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.cpp \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/image_add.hpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/image_add.cpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/image_add.hpp \
   /opt/local/include/opencv2/core/core.hpp \
   /opt/local/include/opencv2/core.hpp \
   /opt/local/include/opencv2/core/cvdef.h \

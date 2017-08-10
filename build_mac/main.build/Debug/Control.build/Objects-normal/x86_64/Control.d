@@ -1,3 +1,4 @@
-dependencies: /Users/Rozen_mac/code/opencv/project/cmake_test/Control.cpp \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/Control.hpp \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/Serial.hpp
+dependencies: \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/Control.cpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/Control.hpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/Serial.hpp

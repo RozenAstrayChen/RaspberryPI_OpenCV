@@ -4,12 +4,12 @@ empty:=
 space:= $(empty) $(empty)
 spaceplus:= $(empty)\ $(empty)
 
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/Rozen_mac/code/opencv/project/cmake_test/CMakeLists.txt))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/3.9.0/CMakeCCompiler.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/3.9.0/CMakeCXXCompiler.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/3.9.0/CMakeSystem.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/feature_tests.c))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/feature_tests.cxx))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/CMakeLists.txt))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/3.9.0/CMakeCCompiler.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/3.9.0/CMakeCXXCompiler.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/3.9.0/CMakeSystem.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/feature_tests.c))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/feature_tests.cxx))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/local/share/OpenCV/OpenCVConfig-version.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/local/share/OpenCV/OpenCVConfig.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/local/share/OpenCV/OpenCVModules-macports.cmake))
@@ -102,5 +102,5 @@ TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/local/share/cmake-3.9/M
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/local/share/cmake-3.9/Modules/Platform/Darwin.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/local/share/cmake-3.9/Modules/Platform/UnixPaths.cmake))
 
-/Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/CMakeFiles/cmake.check_cache: $(TARGETS)
-	/opt/local/bin/cmake -H/Users/Rozen_mac/code/opencv/project/cmake_test -B/Users/Rozen_mac/code/opencv/project/cmake_test/build_mac
+/Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/cmake.check_cache: $(TARGETS)
+	/opt/local/bin/cmake -H/Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV -B/Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac

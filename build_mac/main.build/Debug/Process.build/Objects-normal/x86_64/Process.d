@@ -1,8 +1,9 @@
-dependencies: /Users/Rozen_mac/code/opencv/project/cmake_test/Process.cpp \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/Process.hpp \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/Control.hpp \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/Serial.hpp \
-  /Users/Rozen_mac/code/opencv/project/cmake_test/trackFilteredObject.hpp \
+dependencies: \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/Process.cpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/Process.hpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/Control.hpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/Serial.hpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/trackFilteredObject.hpp \
   /opt/local/include/opencv2/opencv.hpp \
   /opt/local/include/opencv2/opencv_modules.hpp \
   /opt/local/include/opencv2/core.hpp \

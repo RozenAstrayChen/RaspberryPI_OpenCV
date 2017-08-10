@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D6F99FCE77514B39961C32F2"
+               BlueprintIdentifier = "3694115C9CC54AB2A5FE880B"
                BuildableName = "libControl.a"
                BlueprintName = "Control"
                ReferencedContainer = "container:build_mac/main.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D6F99FCE77514B39961C32F2"
+            BlueprintIdentifier = "3694115C9CC54AB2A5FE880B"
             BuildableName = "libControl.a"
             BlueprintName = "Control"
             ReferencedContainer = "container:build_mac/main.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D6F99FCE77514B39961C32F2"
+            BlueprintIdentifier = "3694115C9CC54AB2A5FE880B"
             BuildableName = "libControl.a"
             BlueprintName = "Control"
             ReferencedContainer = "container:build_mac/main.xcodeproj">

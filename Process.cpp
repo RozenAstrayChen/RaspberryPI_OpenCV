@@ -12,7 +12,6 @@ using namespace std;
 /*Override test_hsv function,in order to use rs232  translation*/
 
 void Process::Proecess_track(){
-    cv::namedWindow("image");
     cv::namedWindow("testing on HSV");
     cv::namedWindow("camerafeed");
     
@@ -23,8 +22,11 @@ void Process::Proecess_track(){
         
         frame.copyTo(image_frame);
         cv::cvtColor(image_frame, hsv, cv::COLOR_BGR2HSV);
-        
-        Multiple_inRanage(hsv, threshold, night);
+#ifdef __APPLE__
+        Multiple_inRanage(hsv, threshold, morring);
+#elif __unix
+        Multiple_inRanage(hsv, threshold, morring_pi);
+#endif
         cv::inRange(hsv,Scalar(H_MIN,S_MIN,V_MIN),Scalar(H_MAX,S_MAX,V_MAX), threshold);
         
         
@@ -32,12 +34,12 @@ void Process::Proecess_track(){
         
         if(track)trackObjcet(x, y, threshold, image_frame);
 #ifdef __APPLE__
-        //imshow("image", image_frame);
+       
         imshow("testing on HSV", threshold);
         imshow("camerafeed", image_frame);
 #elif __unix
-	imshow("testing on HSV", threshold);
-	imshow("camerafeed", image_frame);
+        imshow("testing on HSV", threshold);
+        imshow("camerafeed", image_frame);
 #endif
         
         char c = (char)cv::waitKey(1000/15.0);
@@ -99,7 +101,7 @@ void Process::trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFeed) {
                 putText(cameraFeed,"Tracking Object",Point(0,50),2,1,Scalar(0,255,0),2);
                 //write x,y in object
                 writeXY(x, y);
-                CalculateDistance();
+                //CalculateDistance();
                 CalculateDirection();
                 
                 //draw object location on screen
@@ -109,14 +111,44 @@ void Process::trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFeed) {
     }
 
 }
+/*
+ * left 0~399
+ * middle 400~599
+ * right 600~1000
+ *
+ */
 void Process::CalculateDirection(){
-    cout << "X = " << getX() << "Y = " << getY() << endl;
-    
+    //cout << "X = " << getX() << "Y = " << getY() << endl;
+    int value = middle;
+    if(getX() >Left_MIN && getX() < Left_MAX){
+        value = getX()/2;
+        value = middle - value;
+    }else if(getX() > Left_MAX &&  getX() < Right_MIN){
+        value = middle;
+    }else if(getX() > Right_MIN && getX() < Right_MAX){
+        value = getX()/2;
+        value = middle + value;
+    }
 #ifdef __APPLE__
-    
+    if(value < middle){
+        cout << S_Left << endl;
+    }else if(value > middle){
+         cout << S_Right << endl;
+    }else{
+         cout << S_middle << endl;
+    }
     
 #elif __unix
-    
+    if(value < middle){
+        cout << S_Left << endl;
+        Control_left(value);
+    }else if(value > middle){
+        cout << S_Right << endl;
+        Control_right(value);
+    }else{
+        cout << S_middle << endl;
+        Control_ahead(value);
+    }
 #endif
 }
 void Process::CalculateDistance(){

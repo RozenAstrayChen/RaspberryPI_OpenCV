@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Rozen_mac/code/opencv/project/cmake_test
+# Install script for directory: /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Rozen_mac/code/opencv/project/cmake_test/build_mac/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
