@@ -55,6 +55,7 @@ public:
     void Control_ahead(int value) ;
     void Control_Back(int value) ;
     void Control_Turn_back(int value) ;
+    void Control_Stop(int value);
     string byte2_4byte(int value) ;
     /*input one char without "\n"*/
     int getch(void);
@@ -65,11 +66,13 @@ private:
      * right 600~1000
      *
      */
-    int Left_MIN = 0;
-    int Left_MAX = 400;
-    int middle = 1300;
-    int Right_MIN = 600;
-    int Right_MAX = 1000;
+    const int Left_MIN = 0;
+    const int Left_MAX = 400;
+    const int middle = 1300;
+    const int Right_MIN = 600;
+    const int Right_MAX = 1000;
+    const int Go_forward = 5100;
+    const int Stop = 5000;
     const string S_Left = "Left_turn";
     const string S_Right = "Right_turn";
     const string S_middle = "go foward";

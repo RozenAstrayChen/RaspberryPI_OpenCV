@@ -52,6 +52,11 @@ void Process::Control_Turn_back(int value){
     cout << s << endl;
     Send(s);
 }
+void Process::Control_Stop(int value){
+   string s = byte2_4byte(value);
+    cout << s << endl;
+    Send(s);
+}
 string Process::byte2_4byte(int value){
     int value_int = (int)value;
     char* temp = nullptr;
