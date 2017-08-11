@@ -1,9 +1,0 @@
-/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/image_track_pi.dir
-/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/Process.dir
-/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/edit_cache.dir
-/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/Serial.dir
-/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/trackFilteredObject.dir
-/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/rebuild_cache.dir
-/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/image_add.dir
-/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/image_track.dir
-/home/pi/OpenCV/RaspberryPI_OpenCV/build_pi/CMakeFiles/main.dir

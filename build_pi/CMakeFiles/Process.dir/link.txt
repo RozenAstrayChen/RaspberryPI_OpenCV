@@ -1,2 +1,0 @@
-/usr/bin/ar qc libProcess.a  CMakeFiles/Process.dir/Process.o
-/usr/bin/ranlib libProcess.a

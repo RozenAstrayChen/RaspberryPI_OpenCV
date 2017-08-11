@@ -1,2 +1,0 @@
-/usr/bin/ar qc libtrackFilteredObject.a  CMakeFiles/trackFilteredObject.dir/trackFilteredObject.o
-/usr/bin/ranlib libtrackFilteredObject.a
