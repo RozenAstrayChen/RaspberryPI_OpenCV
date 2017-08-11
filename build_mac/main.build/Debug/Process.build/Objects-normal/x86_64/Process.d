@@ -1,8 +1,6 @@
 dependencies: \
   /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/Process.cpp \
   /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/Process.hpp \
-  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/Control.hpp \
-  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/Serial.hpp \
   /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/trackFilteredObject.hpp \
   /opt/local/include/opencv2/opencv.hpp \
   /opt/local/include/opencv2/opencv_modules.hpp \
@@ -121,4 +119,5 @@ dependencies: \
   /opt/local/include/opencv2/videostab/fast_marching_inl.hpp \
   /opt/local/include/opencv2/videostab/deblurring.hpp \
   /opt/local/include/opencv2/videostab/wobble_suppression.hpp \
-  /opt/local/include/opencv2/videostab/ring_buffer.hpp
+  /opt/local/include/opencv2/videostab/ring_buffer.hpp \
+  /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/Serial.hpp

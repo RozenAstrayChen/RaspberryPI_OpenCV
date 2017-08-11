@@ -24,16 +24,16 @@
 
 
 
-class Process: public trackFiliteredObject,public mySerial{
+//class Process: public trackFiliteredObject,public mySerial{
+class Process: public trackFiliteredObject{
 public:
 #ifdef __APPLE__
     
-    Process(string deviceName, int baud ,VideoCapture& video_temp):mySerial(deviceName,baud){
+    //Process(string deviceName, int baud ,VideoCapture& video_temp):mySerial(deviceName,baud){
+    //}
+    Process(string deviceName, int baud ,VideoCapture& video){
         this->video = video;
     }
-    //Process(string deviceName, int baud ,VideoCapture& video){
-       // this->video = video;
-    //}
     
     
 #elif  __unix
@@ -52,10 +52,12 @@ public:
     void CalculateDistance();
     void Control_left(int value) ;
     void Control_right(int value) ;
-    void Control_ahead(int value) ;
-    void Control_Back(int value) ;
-    void Control_Turn_back(int value) ;
-    void Control_Stop(int value);
+    void Control_middle(int value);
+    void Control_Roll() ;
+    void Control_Stop();
+    //void Control_Back(int value);
+    //void Control_Turn_back(int value) ;
+    
     string byte2_4byte(int value) ;
     /*input one char without "\n"*/
     int getch(void);
@@ -66,6 +68,7 @@ private:
      * right 600~1000
      *
      */
+   
     const int Left_MIN = 0;
     const int Left_MAX = 400;
     const int middle = 1300;
@@ -73,9 +76,14 @@ private:
     const int Right_MAX = 1000;
     const int Go_forward = 5100;
     const int Stop = 5000;
+    //flag
+    bool Flag_Roll = false;
+    bool Flag_Stop = true;
+    //bool Flag_Turn = false;
+    int Flag_temp = 1300;
     const string S_Left = "Left_turn";
     const string S_Right = "Right_turn";
-    const string S_middle = "go foward";
+    const string S_middle = "Middle";
 #ifdef __APPLE__
     VideoCapture video;
     

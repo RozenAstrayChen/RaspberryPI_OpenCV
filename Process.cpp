@@ -26,36 +26,64 @@ int Process::getch(){
 void Process::Control_left(int value){
     
     string s = byte2_4byte(value);
-    cout << s << endl;
+    cout << "↖\t" << s << endl;
+    Flag_temp = value;
+    
+#ifdef __unix
     Send(s);
+#endif
 }
 void Process::Control_right(int value){
     
     string s = byte2_4byte(value);
-    Send(s);
-}
-void Process::Control_ahead(int value){
+    cout << "↗\t" << s << endl;
+    Flag_temp = value;
     
-    string s = byte2_4byte(value);
+#ifdef __unix
     Send(s);
+#endif
 }
-void Process::Control_Back(int value){
+void Process::Control_middle(int value){
     
-
-    string s = byte2_4byte(value);
-    cout << s << endl;
+    string s = byte2_4byte(middle);
+    cout << "↑\t" << s << endl;
+    Flag_temp = value;
+    
+#ifdef __unix
     Send(s);
+#endif
 }
-void Process::Control_Turn_back(int value){
 
-    string s = byte2_4byte(value);
-    cout << s << endl;
-    Send(s);
+void Process::Control_Roll(){
+    
+    string s = byte2_4byte(Go_forward);
+    //left
+    if(getX() >Left_MIN && getX() < Left_MAX){
+        cout << "↖\tRoll!!\t" << s << endl;
+    }// middle
+    else if(getX() > Left_MAX &&  getX() < Right_MIN){
+        cout << "↑\tRoll!!\t" << s << endl;
+    }//right turn
+    else if(getX() > Right_MIN && getX() < Right_MAX){
+        cout << "↗\tRoll!!\t" << s << endl;
+    }
+
+    
+    
+#ifdef __unix
+        Send(s);
+#endif
+    
 }
-void Process::Control_Stop(int value){
-   string s = byte2_4byte(value);
-    cout << s << endl;
-    Send(s);
+void Process::Control_Stop(){
+    
+    string s = byte2_4byte(Stop);
+    cout << "Stop\t" << s << endl;
+    
+#ifdef __unix
+        Send(s);
+#endif
+    
 }
 string Process::byte2_4byte(int value){
     int value_int = (int)value;
@@ -71,7 +99,6 @@ string Process::byte2_4byte(int value){
     }else{
         
     }
-    cout << s << endl;
     return  s;
 }
 
@@ -146,32 +173,42 @@ void Process::trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFeed) {
                     y = moment.m01/area;
                     
                     objectFound = true;
+                    
                     refArea = area;
                 }else if(area> MAX_OBJECT_AREA){
+                   
                     putText(cameraFeed,"Tracking STOP!",Point(0,50),2,1,Scalar(0,0,255),2);
                     
-                    /*use rs232 sned data*/
-#ifdef __APPLE__
-                    cout << "Tracking STOP!" << endl;
-#elif __unix
-                    
-#endif
-                    
+
                     objectFound = false;
-                }else objectFound = false;
-                
+                   
+                }else {
+                    objectFound = false;
+                }
                 
             }
             //let user know you found an object
             if(objectFound ==true){
+                
                 putText(cameraFeed,"Tracking Object",Point(0,50),2,1,Scalar(0,255,0),2);
+                
                 //write x,y in object
                 writeXY(x, y);
-                //CalculateDistance();
+                //stop = 1;roll = 0;
+              
+                CalculateDistance();
                 CalculateDirection();
                 
                 //draw object location on screen
-                drawObject(x,y,cameraFeed);}
+                drawObject(x,y,cameraFeed);
+            }else{
+                //stop = 0;roll = 1;
+                if(Flag_Stop == 0 && Flag_Roll== 1){
+                    Flag_Roll = false;
+                    Flag_Stop = true;
+                    Control_Stop();
+                }
+            }
             
         }else putText(cameraFeed,"TOO MUCH NOISE! ADJUST FILTER",Point(0,50),1,2,Scalar(0,0,255),2);
     }
@@ -185,40 +222,45 @@ void Process::trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFeed) {
  */
 void Process::CalculateDirection(){
     //cout << "X = " << getX() << "Y = " << getY() << endl;
-    int value = middle;
+    int value = 1300;
+    //left turn
     if(getX() >Left_MIN && getX() < Left_MAX){
         value = getX()/2;
         value = middle - value;
-    }else if(getX() > Left_MAX &&  getX() < Right_MIN){
+        //left,if temp and value less middle that is servo already  turn left
+        if(!(value < middle && Flag_temp <middle)){
+            cout << S_Left << endl;
+            Control_left(value);
+        }
+    }// middle
+    else if(getX() > Left_MAX &&  getX() < Right_MIN){
         value = middle;
-    }else if(getX() > Right_MIN && getX() < Right_MAX){
+        if(!(value == middle && Flag_temp == middle)){
+            cout << S_middle << endl;
+            Control_middle(value);
+        }
+    }//right turn
+    else if(getX() > Right_MIN && getX() < Right_MAX){
         value = getX()/2;
         value = middle + value;
+        //right,if temp and value more middle that is servo already  turn right
+        if(!(value > middle && Flag_temp >middle)){
+            cout << S_Right << endl;
+            Control_right(value);
+        }
     }
-#ifdef __APPLE__
-    if(value < middle){
-        cout << S_Left << endl;
-    }else if(value > middle){
-         cout << S_Right << endl;
-    }else{
-         cout << S_middle << endl;
-    }
-    
-#elif __unix
-    if(value < middle){
-        cout << S_Left << endl;
-        Control_left(value);
-    }else if(value > middle){
-        cout << S_Right << endl;
-        Control_right(value);
-    }else{
-        cout << S_middle << endl;
-        Control_ahead(value);
-    }
-#endif
+
 }
 void Process::CalculateDistance(){
-    cout << "Range = " << getRange() << endl;
+    //cout << "Range = " << getRange() << endl;
+    //stop = 1;roll = 0;
+    if(Flag_Stop == 1 && Flag_Roll== 0){
+        Flag_Roll = true;
+        Flag_Stop = false;
+        Control_Roll();
+    }
+
+
 #ifdef __APPLE__
     
     

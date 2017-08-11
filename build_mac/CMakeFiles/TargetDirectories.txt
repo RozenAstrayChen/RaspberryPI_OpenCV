@@ -1,5 +1,4 @@
 /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/Process.dir
-/Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/Control.dir
 /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/Serial.dir
 /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/main.dir
 /Users/Rozen_mac/code/opencv/project/RaspberryPI_OpenCV/build_mac/CMakeFiles/trackFilteredObject.dir
