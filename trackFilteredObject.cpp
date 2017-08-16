@@ -67,12 +67,18 @@ void trackFiliteredObject::Multiple_inRanage(Mat &hsv,Mat &threshold,int argumen
             //cv::inRange(hsv, Scalar(17,150,36), Scalar(256,256,170), threshold);
             break;
 	case morring_pi:
-	    H_MIN = 26;H_MAX=256;
+	        H_MIN = 26;H_MAX=256;
             S_MIN=158;S_MAX=256;
             V_MIN=31;V_MAX=249;
 	    break;
         case noon:
             break;
+    case morring_demo:
+            H_MIN = 24;H_MAX=104;
+            S_MIN=80;S_MAX=170;
+            V_MIN=52;V_MAX=256;
+            break;
+
         case night:
             H_MIN =24;H_MAX=80;
             S_MIN=84;S_MAX=256;

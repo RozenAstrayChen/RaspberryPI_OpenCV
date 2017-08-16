@@ -63,7 +63,7 @@ protected:
     int S_MAX = 256;
     int V_MIN = 0;
     int V_MAX = 256;
-    enum hsv_arguments{default_value,morring,morring_pi,noon,night,night2};
+    enum hsv_arguments{default_value,morring,morring_pi,morring_demo,noon,night,night2};
     //x and y values for the location of the object
     int x=0, y=0;
     //Range is judgement distance

@@ -16,7 +16,7 @@
 #include <iostream>
 #include <termios.h>  // for tcxxxattr, ECHO, etc ..
 #include <unistd.h>   // for STDIN_FILENO
-
+#include <thread>
 #ifdef __unix
 #include <cstring>
 #endif
@@ -49,6 +49,7 @@ public:
     void TestGet_Y(void);
     void trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFeed) override;
     void CalculateDirection();
+    void CalculateDirection_new();
     void CalculateDistance();
     void Control_left(int value) ;
     void Control_right(int value) ;
@@ -66,14 +67,14 @@ private:
      * left 0~399
      * middle 400~599
      * right 600~1000
-     *
+     * FFD = fourty five degree angle
      */
    
     const int Left_MIN = 0;
     const int Left_MAX = 400;
     const int middle = 1300;
-    const int Right_MIN = 600;
-    const int Right_MAX = 1000;
+    const int Right_MIN = 800;
+    const int Right_MAX = 1200;
     const int Go_forward = 5100;
     const int Stop = 5000;
     //flag

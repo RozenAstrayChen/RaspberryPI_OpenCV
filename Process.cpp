@@ -24,7 +24,8 @@ int Process::getch(){
     return ch;
 }
 void Process::Control_left(int value){
-    
+    if(Flag_temp > value-50 && Flag_temp < value+50)
+        return;
     string s = byte2_4byte(value);
     cout << "↖\t" << s << endl;
     Flag_temp = value;
@@ -34,7 +35,8 @@ void Process::Control_left(int value){
 #endif
 }
 void Process::Control_right(int value){
-    
+    if(Flag_temp > value-50 && Flag_temp < value+50)
+        return;
     string s = byte2_4byte(value);
     cout << "↗\t" << s << endl;
     Flag_temp = value;
@@ -44,7 +46,8 @@ void Process::Control_right(int value){
 #endif
 }
 void Process::Control_middle(int value){
-    
+    if(Flag_temp > value-50 && Flag_temp < value+50)
+        return;
     string s = byte2_4byte(middle);
     cout << "↑\t" << s << endl;
     Flag_temp = value;
@@ -197,7 +200,7 @@ void Process::trackObjcet(int &x,int &y,Mat threshold,Mat &cameraFeed) {
                 //stop = 1;roll = 0;
               
                 CalculateDistance();
-                CalculateDirection();
+                CalculateDirection_new();
                 
                 //draw object location on screen
                 drawObject(x,y,cameraFeed);
@@ -241,7 +244,7 @@ void Process::CalculateDirection(){
         }
     }//right turn
     else if(getX() > Right_MIN && getX() < Right_MAX){
-        value = getX()/2;
+         value = (getX() -800)/2;
         value = middle + value;
         //right,if temp and value more middle that is servo already  turn right
         if(!(value > middle && Flag_temp >middle)){
@@ -250,6 +253,23 @@ void Process::CalculateDirection(){
         }
     }
 
+}
+void Process::CalculateDirection_new(){
+    int value = 1300;
+    if(getX() > Left_MIN && getX() < Left_MAX){
+        value = getX()/2;
+        value = middle - value;
+        Control_left(value);
+    }if(getX() > Left_MAX &&  getX() < Right_MIN){
+        value = middle;
+        Control_middle(value);
+        
+    }if(getX() > Right_MIN && getX() < Right_MAX){
+        value = (getX() -800)/2;
+        value = middle + value;
+        Control_right(value);
+        
+    }
 }
 void Process::CalculateDistance(){
     //cout << "Range = " << getRange() << endl;

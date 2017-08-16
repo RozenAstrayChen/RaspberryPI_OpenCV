@@ -45,7 +45,9 @@ int main(int argc, char *argv[])
     VideoCapture video(0);
     Process process("/dev/ttyUSB0",115200,video);
     
+    process.createTrackbars();
     process.Proecess_track();
+    
     video.release();
 
     #elif __unix
