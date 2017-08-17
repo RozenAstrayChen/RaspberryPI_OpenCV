@@ -256,17 +256,19 @@ void Process::CalculateDirection(){
 }
 void Process::CalculateDirection_new(){
     int value = 1300;
+    //0~550 servo range 350
     if(getX() > Left_MIN && getX() < Left_MAX){
         value = getX()/1.7;
-        value = (middle - 350) + value;
+        value = (middle + 350) + value;
         Control_left(value);
     }if(getX() > Left_MAX &&  getX() < Right_MIN){
         value = middle;
         Control_middle(value);
         
-    }if(getX() > Right_MIN && getX() < Right_MAX){
+    }//650~1200 servo range 350
+    if(getX() > Right_MIN && getX() < Right_MAX){
         value = (getX() -Left_MAX)/1.7;
-        value = middle  + value;
+        value = middle  - value;
         Control_right(value);
         
     }
