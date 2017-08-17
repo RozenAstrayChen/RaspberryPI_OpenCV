@@ -109,7 +109,7 @@ string Process::byte2_4byte(int value){
 
 void Process::Proecess_track(){
     cv::namedWindow("testing on HSV");
-    cv::namedWindow("camerafeed");
+    //cv::namedWindow("camerafeed");
     
     while(true){
         video.grab();
@@ -121,7 +121,7 @@ void Process::Proecess_track(){
 #ifdef __APPLE__
         Multiple_inRanage(hsv, threshold, night);
 #elif __unix
-        Multiple_inRanage(hsv, threshold, night );
+        Multiple_inRanage(hsv, threshold, morring_pi );
 #endif
         cv::inRange(hsv,Scalar(H_MIN,S_MIN,V_MIN),Scalar(H_MAX,S_MAX,V_MAX), threshold);
         

@@ -69,7 +69,7 @@ void trackFiliteredObject::Multiple_inRanage(Mat &hsv,Mat &threshold,int argumen
 	case morring_pi:
 	        H_MIN = 26;H_MAX=256;
             S_MIN=158;S_MAX=256;
-            V_MIN=31;V_MAX=249;
+            V_MIN=73;V_MAX=249;
 	    break;
         case noon:
             break;

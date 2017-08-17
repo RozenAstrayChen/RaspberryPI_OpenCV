@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
     VideoCapture video(0);
     Process process("/dev/tty.usbserial",9600,video);
     
-    process.createTrackbars();
+    //process.createTrackbars();
     process.Proecess_track();
     
     video.release();
@@ -57,17 +57,14 @@ int main(int argc, char *argv[])
     if(!video.open()){cerr << "Error opening the camera"<<endl;return -1;}
     
     Process process("/dev/ttyUSB0",9600,video);
-    process.Proecess_track();
+    
 
-    //trackFiliteredObject track;
-    //track.createTrackbars();
-    //track.test_hsv(video);
+    process.createTrackbars();
+    process.Proecess_track();
     video.release();
     
-    //process.Send("fuck you");
     
-    
-        // and so on
+
     #elif __linux
         printf("Linux");
     #else
