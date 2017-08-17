@@ -41,6 +41,7 @@ TARGET_LINK_LIBRARIES (main image_track)
 TARGET_LINK_LIBRARIES (main trackFilteredObject)
 TARGET_LINK_LIBRARIES (main Serial)
 TARGET_LINK_LIBRARIES (main Process)
+TARGET_LINK_LIBRARIES (main Serial_termios)
 
 #raspberry
 IF(OpenCV_FOUND AND raspicam_CV_FOUND)
@@ -58,6 +59,7 @@ ADD_LIBRARY (image_track image_track.cpp)
 ADD_LIBRARY (trackFilteredObject trackFilteredObject.cpp)
 ADD_LIBRARY (Serial Serial.cpp)
 ADD_LIBRARY (Process Process.cpp)
+ADD_LIBRARY (Serial_termios Serial_termios.cpp)
 
 #raspberry
 IF(OpenCV_FOUND AND raspicam_CV_FOUND)

@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include "trackFilteredObject.hpp"
+#include "Serial_termios.hpp"
 #include "Serial.hpp"
 #include <string>
 #include <iostream>
@@ -23,14 +24,15 @@
 
 
 
-
-//class Process: public trackFiliteredObject,public mySerial{
+#ifdef __APPLE__
 class Process: public trackFiliteredObject{
+#elif __unix
+class Process: public trackFiliteredObject,public mySerial{
+#endif
 public:
 #ifdef __APPLE__
     
     //Process(string deviceName, int baud ,VideoCapture& video_temp):mySerial(deviceName,baud){
-    //}
     Process(string deviceName, int baud ,VideoCapture& video){
         this->video = video;
     }
@@ -71,16 +73,17 @@ private:
      */
    
     const int Left_MIN = 0;
-    const int Left_MAX = 400;
+    const int Left_MAX = 550;
     const int middle = 1450;
-    const int Right_MIN = 800;
+    const int Right_MIN = 650;
     const int Right_MAX = 1200;
     const int Go_forward = 5100;
-    const int Stop = 5000;
+    const int Stop = 5500;
     //flag
     bool Flag_Roll = false;
     bool Flag_Stop = true;
     //bool Flag_Turn = false;
+    //left max 1100 right max 1800
     int Flag_temp = 1450;
     const string S_Left = "Left_turn";
     const string S_Right = "Right_turn";

@@ -108,8 +108,8 @@ string Process::byte2_4byte(int value){
 /*Override test_hsv function,in order to use rs232  translation*/
 
 void Process::Proecess_track(){
-    //cv::namedWindow("testing on HSV");
-    //cv::namedWindow("camerafeed");
+    cv::namedWindow("testing on HSV");
+    cv::namedWindow("camerafeed");
     
     while(true){
         video.grab();
@@ -119,7 +119,7 @@ void Process::Proecess_track(){
         frame.copyTo(image_frame);
         cv::cvtColor(image_frame, hsv, cv::COLOR_BGR2HSV);
 #ifdef __APPLE__
-        Multiple_inRanage(hsv, threshold, morring);
+        Multiple_inRanage(hsv, threshold, night);
 #elif __unix
         Multiple_inRanage(hsv, threshold, night );
 #endif
@@ -134,7 +134,7 @@ void Process::Proecess_track(){
         imshow("testing on HSV", threshold);
         imshow("camerafeed", image_frame);
 #elif __unix
-        //imshow("testing on HSV", threshold);
+        imshow("testing on HSV", threshold);
         //imshow("camerafeed", image_frame);
 #endif
         
@@ -244,7 +244,7 @@ void Process::CalculateDirection(){
         }
     }//right turn
     else if(getX() > Right_MIN && getX() < Right_MAX){
-         value = (getX() -800)/2;
+        value = (getX() -800)/2;
         value = middle + value;
         //right,if temp and value more middle that is servo already  turn right
         if(!(value > middle && Flag_temp >middle)){
@@ -257,16 +257,16 @@ void Process::CalculateDirection(){
 void Process::CalculateDirection_new(){
     int value = 1300;
     if(getX() > Left_MIN && getX() < Left_MAX){
-        value = getX()/2;
-        value = middle - value;
+        value = getX()/1.7;
+        value = (middle - 350) + value;
         Control_left(value);
     }if(getX() > Left_MAX &&  getX() < Right_MIN){
         value = middle;
         Control_middle(value);
         
     }if(getX() > Right_MIN && getX() < Right_MAX){
-        value = (getX() -800)/2;
-        value = middle + value;
+        value = (getX() -Left_MAX)/1.7;
+        value = middle  + value;
         Control_right(value);
         
     }

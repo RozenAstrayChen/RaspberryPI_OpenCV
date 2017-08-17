@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
     
     #elif __APPLE__
     VideoCapture video(0);
-    Process process("/dev/ttyUSB0",115200,video);
+    Process process("/dev/tty.usbserial",9600,video);
     
     process.createTrackbars();
     process.Proecess_track();
@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
     //Process process("/dev/ttyUSB0",115200,video);
     if(!video.open()){cerr << "Error opening the camera"<<endl;return -1;}
     
-    Process process("/dev/ttyUSB0",115200,video);
+    Process process("/dev/ttyUSB0",9600,video);
     process.Proecess_track();
 
     //trackFiliteredObject track;
