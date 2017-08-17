@@ -72,7 +72,7 @@ private:
    
     const int Left_MIN = 0;
     const int Left_MAX = 400;
-    const int middle = 1300;
+    const int middle = 1450;
     const int Right_MIN = 800;
     const int Right_MAX = 1200;
     const int Go_forward = 5100;
@@ -81,7 +81,7 @@ private:
     bool Flag_Roll = false;
     bool Flag_Stop = true;
     //bool Flag_Turn = false;
-    int Flag_temp = 1300;
+    int Flag_temp = 1450;
     const string S_Left = "Left_turn";
     const string S_Right = "Right_turn";
     const string S_middle = "Middle";

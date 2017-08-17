@@ -108,8 +108,8 @@ string Process::byte2_4byte(int value){
 /*Override test_hsv function,in order to use rs232  translation*/
 
 void Process::Proecess_track(){
-    cv::namedWindow("testing on HSV");
-    cv::namedWindow("camerafeed");
+    //cv::namedWindow("testing on HSV");
+    //cv::namedWindow("camerafeed");
     
     while(true){
         video.grab();
